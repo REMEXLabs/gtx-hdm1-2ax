@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>User Interface Personalization (Single-Page Version)</title>
+  <!--
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" id="rel-css-default" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/black-on-white.css" title="Black on white (high contrast)" id="rel-css-black-on-white" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/white-on-black.css" title="White on black (high contrast)" id="rel-css-white-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/yellow-on-black.css" title="Yellow on black (high contrast)" id="rel-css-yellow-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/lime-on-black.css" title="Lime on black (high contrast)" id="rel-css-lime-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/brown-on-buff.css" title="Brown on buff (low contrast)" id="rel-css-brown-on-buff" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
+  -->
+  <style type="text/css">
+    main > section { margin: 5px; border: 1px dotted red; }
+    section > section { margin: 5px; border: 1px dotted green; }
+    figure { margin-left: 20px; border: 1px solid gray; padding: 5px; }
+    blockquote p.quote-source { margin-top: 0; }
+    div.hdm-vimeo iframe { display:none; /*visibility: hidden;*/ }
+    div.plyr { display: none; }
+    div.plyr:before { content: 'Hidden Plyr / vimeo video'; }
+  </style>
+  <link rel="stylesheet" href="js/plyr-2.0.18/plyr.css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="author" content="Christophe Strobbe" />
+</head>
+
+<body id="home">
+  <header>
+    <h1><span class="h1txt">User Interface Personalization (Single-Page Version)</h1>
+  </header>
+
+  <main id="main">
+  <p>This page combines all the resources from the course
+    <a href="https://www.edx.org/course/user-interface-ui-personalization-mitx-hdm1-2ax">User Interface Personalization</a>
+    on a single page.
+    These resources are available as open educational resources (<abbr>OERs</abbr>) under the terms of the
+    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>
+    (<abbr>CC</abbr>-BY 4.0).
+    Simply put, this licence allows you to share, adapt and redistribute the content of the <abbr>OERs</abbr>, 
+    provided that you correctly attribute the original creators of these resources 
+    (<span lang="de">Hochschule der Medien</span>/Stuttgart Media University). 
+    If you are not familiar with this licence, please read it before reusing these <abbr>OERs</abbr>.
+    <br />For a
+    <a href="https://moocap.gpii.eu/?p=762" title="Description of the course 'User Interface Personalization' on the MOOCAP website">course description</a>,
+    see the <abbr>MOOCAP</abbr> website.
+  </p>
+
+  <section class="module" id="module-1">
+    <h2>Introduction to Personalization (Module 1)</h2>
+    <section>
+      <!--<h3>Welcome to the Course</h3>-->
+      <h3>About This Course</h3>
+      <p>In this course, you will learn the fundamentals of user interface personalization in the context of web sites and web applications. You will learn how user interface personalization can be used to adapt web pages to a diversity of needs, especially the needs of people with disabilities. The course will explain the difference between adaptable and adaptive user interfaces, and why adaptable user interfaces have been only moderately successful.</p>
+      <p>You will get an introduction to the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) framework and its infrastructure of automatically adapting a user interface to a user’s needs and preferences. (Optionally, you will also learn how to make an example web application adaptable by connecting it with the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) framework.)</p>
+      <h4>What You'll Learn</h4>
+      <ul>
+        <li>What is the difference between adaptable and adaptive user interfaces?</li>
+        <li>What are some common approaches to user interface personalization?</li>
+        <li>What features of web pages and web applications can be adapted to support diverse needs, especially the needs of people with disabilities.</li>
+        <li>How do I develop or adapt a web site / web application so it becomes adaptable and personalizable?</li>
+        <li>What is the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) framework and how does it support personalization?</li>
+        <li>How do I use Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) framework to make a website adapt to a user’s needs and preferences?</li>
+      </ul>
+      <h4>Course Structure</h4>
+      <h4>Module&nbsp;1: Introduction to Personalization</h4>
+      <ul>
+        <li>Examples of user interface personalization.</li>
+        <li>Goals and structure of the course.</li>
+        <li>Your experience with personalizing software settings.</li>
+        <li>What are adaptable interfaces, adaptive interfaces and personalization?</li>
+        <li>Why is automatic personalization needed?</li>
+        <li>How is it relevant to accessibility?</li>
+      </ul>
+      <h4>Module&nbsp;2: Understanding Personalization on Web Pages and Sites</h4>
+      <ul>
+        <li>Adaptable features of web sites and web applications:</li>
+        <ul>
+          <li>How are such features relevant to personalization for accessibility?</li>
+          <li>How can these features be modeled as "preference terms" for personalization?</li>
+          <li>Examples include overall style (stylesheets), text characteristics (font face, font size, alignment, line-height, &hellip;) and videos (captions, audio description).</li>
+        </ul>
+        <li>What accessibility needs are not supported by the above types of personalization?</li>
+        <li>Advanced adaptations and how to model them as preference terms.</li>
+      </ul>
+      <h4>Module&nbsp;3: Hands On: Personalizing a Web Interface</h4>
+      <p>In this week, you will use a sample website and work through the following steps:</p>
+      <ul>
+        <li>Copy the sample website to a locally installed web server (Apache <abbr>HTTPD</abbr>, Apache Tomcat, Microsoft <abbr>IIS</abbr>, …).</li>
+        <li>Become familiar with the website: site structure, <abbr>HTML</abbr>, <abbr>CSS</abbr>, …</li>
+        <li>Become familiar with the sample preference sets.</li>
+        <li>Identify at least three features that can be adapted based on the sample preference sets.</li>
+        <li>Create JavaScript and <abbr>CSS</abbr> to manipulate or adapt these website features.</li>
+        <li>Create JavaScript to fetch a needs &amp; preference set from a web server.</li>
+        <li>Create JavaScript to read the needs &amp; preference set and adapt the chosen website features accordingly.</li>
+      </ul>
+      <p>A sample website (using <abbr>HTML</abbr> and <abbr>CSS</abbr>, no server-side script) that you can work on will be provided. However, you are free to use content of your own if you prefer.</p>
+      <h4>Module 4: Introduction to <abbr>GPII</abbr>
+      </h4>
+      <ul>
+        <li>What is the General Public Inclusive Infrastructure (<abbr>GPII</abbr>)?</li>
+        <li>Demo(s) of personalization on the desktop: <abbr>OS</abbr> settings, <abbr>AT</abbr> settings.</li>
+        <li>Understandings needs &amp; preference terms in <abbr>GPII</abbr>. Needs &amp; preference terms describe how software settings should be tweaked to fit the needs &amp; preferences of the user; they don’t describe the user’s abilities or disabilities.</li>
+      </ul>
+      <h4>Requirements</h4>
+      <p>This course requires basic web development skills, namely <abbr>HTML</abbr>, <abbr>CSS</abbr> and JavaScript (including <abbr>JSON</abbr>).
+        These skills are important if you want to do the practical task in module 3 of the course.
+        The use of JavaScript will involve retrieving a <abbr>JSON</abbr> file, reading its contents and then manipulating <abbr>HTML</abbr> elements based on the contents of the <abbr>JSON</abbr> file. 
+        Basic skills should be sufficient to do the task; more advanced skills should allow you to make more ambitious modifications.
+      </p>
+    </section>
+    <section>
+      <h3>Welcome</h3>
+      <div class="hdm-vimeo" data-type="vimeo" data-video-id="222236107"></div>
+    </section>
+    <section>
+      <h3>Barriers, Accessibility and Usability</h3>
+      <section>
+        <h4>Barriers</h4>
+        <p>We are all familiar with the experience of stumbling upon a web page that we can’t read because it is in a language that we aren’t familiar with. If it is a multilingual site, it usually offers links or buttons to switch to a different language, hopefully one we can read.</p>
+        <figure><img src="img/JLPT-jp_JapaneseVersionWithLangSwitcher_LangSwitcher.png" alt="Screenshot of language switching feature on Japanese website"  width="561" height="70" />
+          <figcaption>The website <abbr>JLPT</abbr>.jp allows visitors to switch the language to English, simplified Chinese characters or traditional Chinese characters</figcaption>
+        </figure>
+        <p>People with disabilities can run into similar problems, for example when</p>
+        <ul>
+          <li>the website’s default font size is too small,</li>
+          <li>the contrast between text and background is too low,</li>
+          <li>the contrast between text and background is too high,</li>
+          <li>significant parts of the content are not displayed as normal text but as part of images, which cannot be read by blind people or by the type of software they use (screen readers),</li>
+          <li>the text requires a reading level that is higher than the visitor’s reading level,</li>
+          <li>the website contains content that moves or blinks or is constantly updated, which makes it hard or even impossible for the visitor to read the content,</li>
+          <li>the website contains an object that keyboard users can tab into but not out of again (“keyboard trap”; this used to be a major issue with Flash).</li>
+        </ul>
+        <p>Some websites contain widgets to adapt specific aspects of the website, especially font size. Below are a few examples.</p>
+        <figure><img src="img/FontResizeWidget_AfeInnovNet-eu_defaultsize.png" alt="Widget with a plus sign, a big uppercase A, smaller uppercase A, a minus sign, and a small uppercase A" width="415" height="105" />
+          <figcaption>Font size widget with three font sizes (copyright <abbr>AFE</abbr> INNOVNET 2014–2016)</figcaption>
+        </figure>
+        <figure><img src="img/FontResizeAndContrastWidgets_paralympic-org-london2012_widge.png" alt="Widget with the word 'Enlargement', a plus button, a reset button and a minus button" width="172" height="28" />
+          <figcaption>Font resize widget with a larger number of font options (copyright International Paralympic Committee (<abbr>IPC</abbr>))</figcaption>
+        </figure>
+        <p>Some websites contain widgets that allow the visitor to choose a different background colour or even a different colour combination for foreground and background. Below are a few examples.</p>
+        <figure><img src="img/ColourSwitch_Irlen-com_Colour04_switcher.png" alt="Bar with the words 'Change background color to see how color can help you' and several pictures of glasses in different colours" width="877" height="55" />
+          <figcaption>Background colour switcher used on Irlen.com (copyright Irlen Institute)</figcaption>
+        </figure>
+        <figure><img src="img/ColourSwitch_Irlen-Wichita-com_Widget.png" alt="Widget with the words 'Change background color to see how color can help you' and a number of buttons in light colours that can be used as background colours" width="751" height="46" />
+          <figcaption>Part of a background colour switcher (copyright Irlen Clinic of Whichita)</figcaption>
+        </figure>
+        <p>Some websites have widgets that can be used to have the content read aloud. Below are links to a few examples:</p>
+        <ul>
+          <li><a href="http://www.dyslexiaaction.org.uk/">Dyslexia Action</a> (check the “Read aloud” button),</li>
+          <li><a href="http://www.dyslexieweb.nl/" hreflang="nl" lang="nl">Dyslexieweb</a> (in Dutch; check the “<span lang="nl">Lees voor</span>” button)</li>
+          <li><a href="https://www.nabu.de/wir-ueber-uns/infothek/20465.html" hreflang="de" lang="de"><abbr>NABU</abbr></a> (in German; check the “<span lang="de">Vorlesen</span>” button).</li>
+        </ul>
+        <!--
+        <figure><img src="img/" alt="" />
+          <figcaption></figcaption>
+        </figure>
+        -->
+      </section>
+      <section>
+        <h4>Additional Links</h4>
+        <p>The discussion of widgets for increasing font size or changing colours is only meant as an introduction to accessibility barriers and how some websites have tried to address these barriers. The description is actually not meant to encourage web developers to integrate such widgets into their websites. This type of widgets is no longer state of the art; articles arguing against them started appearing in early 2007; for example:</p>
+        <ul>
+          <li>Shawn Lawton Henry: “<a href="http://www.uiaccess.com/textresizewidgetno.html">Text Resize Widgets and Fishing</a>” (early 2007).</li>
+          <li>Roger Johansson: “<a href="http://www.456bereastreet.com/archive/200709/scrap_text_resize_widgets_and_teach_people_how_to_resize_text/">Scrap text resize widgets and teach people how to resize text</a>” (21 September 2007).</li>
+        </ul>
+      </section>
+    </section>
+    <section>
+      <h3>Discussion: Other Web-based Adaptations</h3>
+      <p>After the brief overview of web-based adaptation functionality in the previous step, think about the following questions and go to the discussion area to talk about your findings:</p>
+      <ol>
+        <li>Can you find other examples of text resize widgets on the web? What are the main limitations and drawbacks of building text resize widgets into webpages?</li>
+        <li>Can you find other websites that allow users to change the background colour? What are the main limitations and drawbacks of building colour switchers into webpages?</li>
+        <li>Can you find other websites with read-aloud functionality on the web? What are the main limitations and drawbacks of building read-aloud functionality into webpages?</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Accessibility and Usability</h3>
+      <p>In the context of this course, the goal of personalization is to make websites more usable and accessible for everybody. As Tim Berners-Lee, the inventor of the World Wide Web, said in 1997,</p>
+      <blockquote>
+        <p>The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.</p>
+        <p class="quote-source"><cite>(Press release “World Wide Web Consortium Launches International Program Office for Web Accessibility Initiative”, <a href="https://www.w3.org/Press/IPO-announce">22 October 1997</a>)</cite></p>
+      </blockquote>
+      <p>You have probably heard the words “accessibility” and “usability” before, but what is the difference?</p>
+      <p><strong>Accessibility</strong> refers to the degree to which products and services can be used by people with a wide range of abilities. 
+        Accessible design often focuses on people with disabilities, but it also benefits people who do not consider themselves as having a disability. 
+        For example, elderly people typically experience a gradual loss in vision, hearing and mobility; they usually don’t consider these changes as disabilities but just a part of ageing.
+      </p>
+      <p>When a user interface can adapt features such as font size, button size and contrast, elderly people can benefit from this. 
+        Some situations can lead to temporary “disabilities”. For example, when you have a broken arm, typing is more difficult and voice recognition software can be very helpful. 
+        When you have mislaid your glasses, text zooming or text-to-speech software can be useful. 
+        When you want to make a phone call in a very noisy environment, you are in a way temporarily disabled by the noise around you. So you could say that inaccessibility is a mismatch between your abilities and the context in which you want to do something.
+      </p>
+      <p><strong>Usability</strong> refers to the degree to which products are easy to use. 
+        It is often defined as consisting of several components such as learnability, efficiency, memorability, errors and satisfaction 
+        (see for example Jakob Nielsen’s article “<a href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/">Usability 101: Introduction to Usability</a>”).
+        The most frequently quoted definition of usability comes from standard <abbr>ISO</abbr> 9246-11:
+      </p>
+      <blockquote>
+        <p>[The] extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.</p>
+      </blockquote>
+      <p>Many accessibility features in websites and products also improve usability for everyone. 
+        According to <a href="https://www.abilitynet.org.uk/expert-resources/web-accessibility-resources" title="AbilityNet: Digital Accessibility Resources">AbilityNet</a>, 
+        <q>Accessible sites are 35% more usable by everyone whether they have special access needs or not.</q> 
+        However, accessibility does not not cover all aspects of usability. 
+        Similarly, making your website usable will not automatically make your website accessible, especially if usability tests don’t include people with diverse disabilities. 
+        According to the World Wide Web Consortium’s <a href="https://www.w3.org/WAI/intro/usable">Web Accessibility Initiative</a>, 
+        <q>basic accessibility is a prerequisite for usability.</q>
+      </p>
+    </section>
+    <section>
+      <h3>Accessibility Features in Firefox</h3>
+      <div data-type="vimeo" data-video-id="235591486"></div>
+      <p>The above video shows several accessibility features in Firefox, including zooming. 
+        The zooming in the video increases the size of everything on the page. However, it is also possible to increase just the text size. You can do this as follows:
+      </p>
+      <ol>
+        <li>Press the <kbd>Alt</kbd> key to bring up the Firefox menu at the top of the window.</li>
+        <li>In the menu bar, open the <kbd>View</kbd> menu, then go to <kbd>Zoom</kbd>.</li>
+        <li>In the <kbd>Zoom</kbd> submenu, select <kbd>Zoom Text Only</kbd>. When this option is selected, zooming will only increase text size, not the size of images.</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Discussion: Browser Accessibility Features</h3>
+      <p>Now that you have seen some of the adaptation options in Firefox that improve the accessibility of web content for some types of users, please think about the following questions and discuss your thoughts in the discussion forum:</p>
+      <ol>
+        <li>Can you think of types of web content that cannot be made more readable by means of the browser’s accessibility features?</li>
+        <li>Can you think of any other downsides to these techniques for making web content more accessible?</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Accessibility Add-ons for Firefox</h3>
+      <div data-type="vimeo" data-video-id="227325680"></div>
+    </section>
+
+
+    <section>
+      <h3>Accessibility and “One Size Fits All”</h3>
+      <p>Since the mid 1990s, there have been efforts to formulate guidelines to increase the accessibility of webpages for people with disabilities.
+        The year 1999 then saw the publication of the Web Content Accessibility Guidelines 1.0 (<abbr>WCAG</abbr> 1.0), 
+        followed by a <a href="https://www.w3.org/TR/WCAG20/">second version in December 2008</a>.
+      </p>
+      <p>Around the year 2000, it was not unusual for websites to have a separate “accessible” version. This accessible version was often a text-only version.
+        For example, in 2000, the <abbr>UK</abbr> supermarket chain Tesco created a separate online version of their site that was targeted at people with visual impairments, which resulted in considerable additional revenue.
+        However, such separate versions were not always updated as frequently as the main website. As disability advocates pointed out, “separate is not equal”, and separate websites for people with disabilities gradually became a thing of the past.
+      </p>
+      <p>As a result, websites had only one version (except perhaps for different language versions). However, different people have different needs.
+        For example, people with an intellectual disability (<abbr>USA</abbr> term) or a general learning disability (<abbr>UK</abbr> term) would benefit from a design that is very different from a design for a general audience.
+        People with low vision would benefit from a design with big fonts, high contrast and a shorter line length.
+        In fact, the same person with low vision may prefer black on white text in one context and an inverted contrast in another context, for example, when reading a longer text on a white background would cause too much glare.
+      </p>
+      <p>In other words, one size does not quite fit all, and an interface that automatically adapts to individual needs would benefit people with a wide range of abilities and in a variety of situations.</p>
+      <p>After the emergence of mobile devices, the design choice between one version or several versions became an issue again, since designers now need to cater for a much larger range of screen sizes.
+        One way of dealing with this is adaptive web design, which essentially creates different versions of a site for different devices.
+        Another way of dealing with different devices is responsive web design: this creates a single web site that is flexible enough to be viewed on devices with different screen sizes.
+        Adaptive web design creates more work than responsive web design, but it also creates more freedom, since it allows you to create different experiences for different mobile devices.
+        However, the primary focus is on device capabilities, not on users.
+      </p>
+      <h4>Additional Links</h4>
+      <ul>
+        <li>Gregg C. Vanderheiden:
+          <a href="http://trace.umd.edu/publications/design-html-mosaic-pages-increase-their-accessibility-users-disabilities-strategies">Design of <abbr>HTML</abbr> (Mosaic) Pages to Increase their Accessibility to Users with Disabilities Strategies for Today and Tomorrow</a>,
+          31 January 1995. Probably the earliest extant example of accessibility guidelines for the web.
+        </li>
+        <li><abbr>W3C</abbr> Wiki:
+          <a href="https://www.w3.org/wiki/Accessibility_basics">Accessibility Basic</a>.
+          This wiki page briefly discusses Tesco’s separate website.
+        </li>
+        <li>Law Office of Lainey Feingold:
+          <a href="http://www.lflegal.com/2014/02/safeway-accessibility/">Separate is Not Equal: Good News for Grocery Delivery</a>,
+          8 February 2014. afeway used to have a separate text-only site for blind customers. In 2014, the company decided to update the main site to the Web Content Accessibility Guidelines 2.0 Level AA and remove the separate site.
+        </li>
+        <li>Web<abbr>AIM</abbr>:
+          <a href="http://webaim.org/articles/design/textonly">Design Considerations: Text-only Versions</a>. 
+        </li>
+        <li>Automatic adaptation of user interfaces has also been proposed as a way to personalize interfaces based on culture.
+          See Katharina Reinecke &amp; Abraham Bernstein:
+          <a href="http://www.misq.org/skin/frontend/default/misq/pdf/appendices/2013/ReineckeBernstein.pdf">Knowing What a User Likes: A Design Science Approach to Interfaces That Automatically Adapt to Culture</a>,
+          <i class="journal"><abbr>MIS</abbr> Quarterly</i>, <abbr>Vol.</abbr> 37, <abbr>No.</abbr> 2, <abbr>pp.</abbr> 427-453/June 2013.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Adaptable Versus Adaptive User Interfaces</h3>
+      <p>In the videos about browser accessibility features and accessibility add-ons, we saw how <abbr>HTML</abbr> content can be adapted to make it more readable. 
+        <abbr>HTML</abbr> is a text-based medium and is therefore very adaptable. By contrast, bitmap images are usually not <strong>adaptable</strong>;
+        they can only be enlarged by enlarging their pixels, and colours cannot be adapted on the fly.
+        (Vector-based images, especially <abbr>SVG</abbr> or Scalable Vector Graphics, offer more possibilities.)
+      </p>
+      <p>However, in the videos in the previous steps, the adaptation was performed by the browser or a browser add-on, not by the <abbr>HTML</abbr> page itself.
+        If a webpage provided a mechanism to adapt its own presentation, content or both, it would be an example of an adaptable user interface.
+        Simply put, an adaptable user interface is an interface that allows the user to tweak or optimize it.
+      </p>
+      <p>Adaptable user interfaces are not unusual in desktop applications.
+        For example, in the desktop version of Firefox, you can customize the user interface by enabling or disabling the title bar, the menu bar and the bookmarks toolbar.
+        (These user interface elements used to be visible by default, but when tablets became widely used, the Firefox developers decided to hide them by default in order to save screen space on smaller devices.)
+        In addition, you can also install <a href="https://support.mozilla.org/en-US/kb/use-themes-change-look-of-firefox">themes</a> to change colours and other aspects of the user interface.
+      </p>
+      <p>The image below shows top part of Firefox's user interface with the theme "<a href="https://addons.mozilla.org/en-GB/firefox/addon/dbfdnm/">DBFDNM</a>" by SERG (licence: <abbr>CC-BY</abbr>).
+        A browser theme may make the labels on the user interface elements hard to read.<br />
+        <img src="img/Firefox_Theme-DBFDNM_SERG_CC-BY_6-top-small.png"
+          alt="Menu bar, tab bar, URL bar and bookmarks bar in Firefox. The names of the menu items and the bookmarks are white. The left part of the user interface has a dark background; the right part has a colourful background image with that makes the white text hard to read."
+          width="578" height="127" />
+      </p>
+      <p>These tweaks and adaptations are performed by the user; they are not performed automatically by the software itself.
+        If these changes worked automatically, we would call such interfaces adaptive.
+        An <strong>adaptive user interface</strong> is a user interface that automatically changes its interface elements and possibly its content in order to suit the needs and/or preferences of the user, the user’s context or both.
+      </p>
+      <p>Adaptable and adaptive user interfaces are <strong>not mutually exclusive</strong>.
+        First, it is good practice to give the user control over what the user interface looks like, so they can undo or tweak automatic changes in an adaptive user interface.
+        Second, from a technical point of view, adaptive user interfaces can be built by exploiting adaptable features that are already available, for example by adding some sort of intelligent component that decides when certain adaptations should take place.
+      </p>
+      <p>Designers of adaptable user interfaces should always bear in mind that <strong>many users, possibly as many as 95%, never change the settings</strong> in a software program.
+        This has several consequences. One of them is that programs should be delivered to users with sensible default settings.
+        Since users are very diverse, these default settings will necessarily be a compromise based on what would be best for “most users”.
+        Another consequence is that it would be worthwhile to invest some time and effort in finding out what settings users would change most (assuming they can find them) and make these settings easy to find.
+        This second piece of advice would also apply to adaptive user interfaces: when a user interfaces changes automatically and the user does not like this change, it should be easy for the user to find out how to undo it.
+      </p>
+      <h4>Additional Links</h4>
+      <ul>
+        <li>Jared Spool: <a href="https://www.uie.com/brainsparks/2011/09/14/do-users-change-their-settings/">Do users change their settings?</a>,
+          <i class="blog">User Interface Engineering Blog</i>, 14 September 2011.
+        </li>
+        <li>Wendy E. Mackay:
+          <a href="http://www.lri.fr/~mackay/pdffiles/CHI91.Triggers.pdf">Triggers and Barriers to Customizing Software</a>.
+          <abbr>CHI</abbr> '91 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, New Orleans, Louisiana, 27 April – 2 May 1991. New York: <abbr>ACM</abbr>, 1991. <abbr>P.</abbr> 153–1.
+        </li>
+        <li>Joanna McGrenere; Ronald M. Baecker; Kellogg S. Booth:
+          <a href="https://dl.acm.org/citation.cfm?id=503406">An evaluation of a multiple interface design solution for bloated software</a>.
+          <abbr>CHI</abbr> '02 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, Minneapolis, Minnesota, 20 – 25 April 2002. New York: <abbr>ACM</abbr>, 2002. Pages 164–170.
+        </li>
+        <!--@@
+        <li>Nikola Banovic; Fanny Chevalier; Tovi Grossman; George Fitzmaurice:
+          <a href="https://dl.acm.org/citation.cfm?id=2208666">Triggering triggers and burying barriers to customizing software</a>,
+          <abbr>CHI</abbr> '12 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, Austin, Texas, 05 – 10 May 2012. New York: <abbr>ACM</abbr>, 2012. Pages 2717–2726.
+        -->
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="module" id="module-2">
+    <h2>Understanding Personalization on Web Pages and Sites (Module 2)</h2>
+    <section>
+      <h3><abbr>JSON</abbr>-based Needs &amp; Preferences Sets</h3>
+      <p>Now that you are familiar with some of the aspects of adaptation and accessibility, it is time to explain how the adaptations that a specific person needs (or wants) can be described in a machine-readable way.
+        A machine-readable description of adaptation needs or preferences is often called a “user profile”.
+        In this course we will be using a specific “flavour” of user profile that does not contain any personally identifiable information but just a list of adaptations and settings that describe what a specific user needs or prefers;
+        we will therefore call it a “<strong>needs and preference set</strong>” or, in short, “<strong><abbr>NP</abbr> set</strong>”.
+      </p>
+      <p>What does an <abbr>NP</abbr> set look like? In this context, we will be using the format defined by the Global Public Inclusive Infrastructure or <abbr>GPII</abbr>.
+        The core of <abbr>GPII</abbr> is a piece of open-source software infrastructure developed in several research and development projects starting in 2011.
+        (More details are available via the links at the bottom of this page and in <a href="#module-4">module 4</a> of this course.)
+      </p>
+      <p>The <abbr>NP</abbr> set format used in <abbr>GPII</abbr> is based on <strong><abbr>JSON</abbr></strong>. Below is an example:
+      </p>
+      <pre><code>{
+  "contexts":{
+    "gpii-default":{
+      "name":"Default preferences",
+      "preferences":{
+        "http://registry.gpii.eu/common/language":"en-GB",
+        "http://registry.gpii.eu/common/fontSize":24,
+        "http://registry.gpii.eu/common/linkAdaptation":"emphasizeLinks",
+        "http://registry.gpii.eu/common/highContrastEnabled":true,
+        "http://registry.gpii.eu/common/highContrastTheme":"white-black",
+        "http://registry.gpii.eu/common/signLanguageEnabled":false,
+        "http://registry.gpii.net/applications/eu.gpii.olb":{
+          "lineSpacing":2,
+          "inputsLarger":true
+        }
+      }
+    }
+  }
+}</code></pre>
+      <p>(You can also find <a href="https://remexlabs.github.io/GTx_HDM12aX_preferences/olb_Carla.json">this example online</a>.
+        Since we will refer back to this example in the next few units, it may be helpful to keep the example open in a different browser window or tab.)
+      </p>
+      <p>
+      </p>The most important part is the “preferences” block.
+        It contains two types of preferences: the first type has the namespace <code>http://registry.gpii.eu/common/</code>;
+        the second type has the namespace <code>http://registry.gpii.net/applications/eu.gpii.olb</code>.
+        Preference terms in the first namespace are part of a common language or bridge language that can be understood independent of specific applications that support <abbr>GPII</abbr>.
+        We therefore call these terms “common terms”. These are the subject of the next unit.
+    </section>
+    <section>
+      <h3>Common Terms</h3>
+      <p>Whenever possible, <strong>common terms</strong> use data types and value ranges that are intended to make the translation to specific application settings as easy as possible.
+        For example, applications may identify language—such the language of a user interface or for speech synthesis—in various ways: some use numbers, some use non-standard strings that only the application supports.
+        The common term <code>http://registry.gpii.eu/common/language</code> uses values based on 
+        <a href="https://tools.ietf.org/rfc/bcp/bcp47.txt"><abbr>IETF</abbr> <abbr>BCP</abbr> 47</a> (Best Common Practice 47: “Tags for Identifying Languages”, defined by the Internet Engineering Task Force) and can therefore be used to identify thousands of languages.
+        These language tags can then be translated or transformed into whatever values are supported by a specific application.
+        This “transformation” is one of the most important tasks of the program code that enables communication between <abbr>GPII</abbr> and an application.
+      </p>
+      <p>The same applies to the common term <code>http://registry.gpii.eu/common/fontSize</code>: this term defines font size in points.
+      Some applications define font size with strings such as “medium”, “large” and “x-large”.
+      Once you know the point sizes that correspond to these strings, it is possible to write code that transforms the point sizes to a string that is supported by the application.
+      </p>
+      <p>The common terms that we will use in this course are a small set of around 60 terms based on work in the 
+        <a href="https://joinup.ec.europa.eu/document/cloud4all-cloud-platforms-lead-open-and-universall-access-people-disabilities-and-all">Cloud4all project</a> (2011–2015), the project that started the development of <abbr>GPII</abbr>.
+        This limited set is meant to be expanded when the revision of the standard <abbr>ISO</abbr>/<abbr>IEC</abbr> 24751 has been completed.
+        (<a href="https://www.iso.org/standard/41521.html"><abbr>ISO</abbr>/<abbr>IEC</abbr> 24751:2008</a>: “Information technology -- Individualized adaptability and accessibility in e-learning, education and training” is a standard that covers adaptability in the context of e-learning and contained a list of preference terms that was fixed for the lifetime of the standard.
+        The revised standard will apply to <abbr>ICT</abbr> in general and will replace the closed list with an open-ended “registry” where <abbr>GPII</abbr> implementers will be able to register new preference terms.)
+      </p>
+    </section>
+    <section>
+      <h3>Application-Specific Terms</h3>
+      <p>In our <a href="https://remexlabs.github.io/GTx_HDM12aX_preferences/olb_Carla.json">example <abbr>NP</abbr> set</a>, 
+        the terms in the namespace <code>http://registry.gpii.net/applications/eu.gpii.olb</code> (in our example <abbr>NP</abbr> set) refer to settings in an application identified as <code>eu.gpii.olb</code>.
+        These settings are not described using “common terms” but with “<strong>application-specific terms</strong>”. This type of terms uses names, data types and value ranges that directly reflect what an application uses internally.
+        There may be several reasons for using application-specific terms instead of common terms.
+      </p>
+      <ul>
+        <li>First, the set of common terms is limited and an application may have one or more settings that cannot be expressed using only common terms. An application’s set of application-specific terms is under control of the application developer, so the application-specific terms can describe the application’s settings without waiting for approval of new common terms.</li>
+        <li>Second, if an application’s settings are expressed in common terms, the conversion into actual settings may sometimes lead to a lack of precision in the setting values. This lack of precision can be avoided by using application-specific terms that map directly to the real settings. (A loss of precision may also occur in scenarios where application-specific preferences are converted into preferences expressed as common terms.)</li>
+        <li>Finally, it is technically possible to convert some application settings into GPII’s JSON format, for example in order to create a <abbr>GPII</abbr> user’s initial <abbr>NP</abbr> set. Using application-specific terms to express these settings would avoid the two problems described above.</li>
+      </ul>
+      <p>Application-specific terms are always in a namespace that starts with the string <code>http://registry.gpii.net/applications/</code>.
+        For example, application-specific settings for the open-source screen reader 
+        <a href="https://www.nvaccess.org/about/nvda-features/"><abbr>NVDA</abbr> (Non-Visual Desktop Access)</a> use the namespace <code>http://registry.gpii.net/applications/org.nvda-project/</code>,
+        and settings for the magnifier in <a href="https://wiki.gnome.org/Projects/GnomeShell">GNOME Shell</a> (one of the desktops for <abbr>GNU</abbr>/Linux) use the namespace <code>http://registry.gpii.net/applications/org.gnome.desktop.a11y.magnifier/</code>.
+      </p>
+    </section>
+    <section>
+      <h3>The Other Parts of the <abbr>NP</abbr> Set</h3>
+      <p>Finally, let’s turn our attention to the code that wraps around the preferences in our 
+        <a href="https://remexlabs.github.io/GTx_HDM12aX_preferences/olb_Carla.json">example <abbr>NP</abbr> set</a>.
+      </p>
+      <p>The first level in the <abbr>NP</abbr> set, "<code>contexts</code>", is a way of subdividing an <abbr>NP</abbr> set into preferences that may apply under different circumstances.
+        For example, there may be one set of preferences that applies most of the time (<abbr>e.g.</abbr> "<code>gpii-default</code>", as in the example above) and another set of preferences that applies only in dark surroundings (<abbr>e.g.</abbr> "dark").
+        The settings for dark surroundings might say, for example, that the screen should be dimmed.
+        A <abbr>GPII</abbr> implementation that can detect changes in ambient light may then look for the "dark" settings and automatically dim the screen.
+        (In that case, the <abbr>NP</abbr> set will also need to describe what level of illuminance is considered “dark” so that it can be evaluated against the measurements of a lux meter or a similar sensor. This is outside the scope of this course.)
+      </p>
+      <p>Finally, the value for "<code>name</code>" gives a human-readable name to the set of preferences for a specific context. This name can be used in editing tools for <abbr>NP</abbr> sets.
+      </p>
+      <h4>Additional Links</h4>
+      <p>These links are not required reading for the course.</p>
+      <ul>
+        <li><a href="https://raisingthefloor.org/">Raising the Floor</a>, the organisation that initiated and co-ordinates work on <abbr>GPII</abbr>.</li>
+        <li><a href="https://www.iso.org/standard/41521.html"><abbr>ISO</abbr>/<abbr>IEC</abbr> 24751-1:2008</a>: “Information technology -- Individualized adaptability and accessibility in e-learning, education and training -- Part 1: Framework and reference model”.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Alternative Style Sheets</h3>
+      <p>A relatively straightforward way of providing adaptability is providing alternative style sheets.
+        When web developers provide more than one style sheet, the goal is usually to cater for different devices and media.
+        <abbr>CSS</abbr> 2 defined a list of media types for which you can write separate style sheets, for example, “<code>all</code>”, “<code>screen</code>”, “<code>print</code>”, “<code>projection</code>” and “<code>speech</code>”.
+        These media types can be used in two important ways: in <code>@media</code> rules inside <abbr>CSS</abbr> style sheets, and in the <a href="https://www.w3.org/TR/html5/document-metadata.html#the-link-element"><code>link</code> element</a> witch which you reference style sheets for an <abbr>HTML</abbr> document.
+        In this step, we will look only at link elements for specifying external style sheets.
+        (For the purpose of this introduction, we will ignore the media queries introduced in <abbr>CSS</abbr> 3.)
+      </p>
+      <p>The following code example shows how media types can be used in the link element:</p>
+      <pre><code>
+&lt;link rel="stylesheet" type="text/css" media="all" href="/css/allmedia.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" media="print" href="/css/print.css" /&gt;
+      </code></pre>
+      <p>(Note: <abbr>HTML</abbr> code examples in this course use <abbr>XHTML</abbr>5 syntax.)</p>
+      <p>This code example instructs the browser to load the style sheet “allmedia.css” for all types of media it supports.
+        When the <abbr>HTML</abbr> page is displayed on a screen, it should also load “screen.css” but ignore “print.css”;
+        in a print preview and when sending the <abbr>HTML</abbr> page to a printer, it should load “print.css” and ignore “screen.css”.
+      </p>
+      <p>Media types allow you to define style sheet for specific devices but people using the same device still get the same style sheet.
+        If a screen style sheet implements a low-contrast theme, people who need high contrast settings will still get the low-contrast style sheet (unless perhaps if they print the <abbr>HTML</abbr> page).
+        People who need a bigger font size still get the same font size that everyone else gets, unless they belong to the small group of expert users who know how to increase font size in the browser.
+        Fortunately, we can use the link element to provide style sheets that cater for different accessibility needs, namely by providing alternative style sheets.
+      </p>
+      <p>The following code example shows how you can link to alternative style sheets:</p>
+      <pre><code>
+&lt;link rel="stylesheet" type="text/css" media="screen" href="/css/gtx_hdm12ax.css" title="Default style" /&gt;
+&lt;link rel="alternate stylesheet" type="text/css" media="screen" href="/css/black-on-white.css" title="Black on white (high contrast)" /&gt;
+&lt;link rel="alternate stylesheet" type="text/css" media="screen" href="/css/white-on-black.css" title="White on black (high contrast)" /&gt;
+&lt;link rel="alternate stylesheet" type="text/css" media="screen" href="/css/yellow-on-black.css" title="Yellow on black (high contrast)" /&gt;
+&lt;link rel="alternate stylesheet" type="text/css" media="screen" href="/css/lime-on-black.css" title="Lime on black (high contrast)" /&gt;
+      </code></pre>
+      <p>For simplicity’s sake, we are only considering the “screen” media type. The most important thing is the addition of the keyword “alternate” to the <code>link</code> element’s <code>rel</code> attribute; this keyword tells the browser to treat the linked style sheet as an alternative style sheet.
+        By default, the browser will only load the style sheet(s) without the “alternate” keyword.
+        The browser will only load an alternative style sheet instead of the default if it is somehow told to do so.
+      </p>
+      <p>How can the visitor of a website benefit from alternative style sheets?
+        Few browsers provide a mechanism to allow people to load an alternative style sheet.
+        The Mozilla browsers Firefox and SeaMonkey display a list of style sheets in the View menu.
+        In Firefox, go to <code>View</code>, then open the submenu “<code>Page Style</code>”. (You will first need to enable the menu bar in the browser’s customisation options.)
+        In SeaMonkey, go to <code>View</code>, then open the submenu “<code>Use Style</code>”.
+        In Opera 12, the last version based on the <a href="https://en.wikipedia.org/wiki/Presto_(layout_engine)">Presto layout engine</a>,
+        go to <code>View</code> and open the <code>Style</code> menu.
+        The browser will use the values of the <code>tite</code> attributes on the <code>link</code> elements to populate the list of alternative style sheets; this is why adding the <code>title</code> attribute on these <code>link</code> elements is required.
+      </p>
+      <p>The screenshot below shows how Firefox 54 displays the list of alternative style sheets created by the above code sample.
+        (Image copyright @ Mozilla Foundation.)
+      </p>
+      <p><img src="img/Firefox54_menu_alternatestylesheets_6.png" alt="Page Style menu in the View menu: the Page Style menu shows the following options: No Style, Default style, Black on white (high contrast), White on black (high contrast), Yellow on black (high contrast) and Lime on black (high contrast)." width="503" height="235" />
+      </p>
+      <p>Even in the few browsers that enable users to select an alternative style sheet, this selection is always limited to the current page and does not apply to other pages on the same website.
+        Alternative style sheets are only really useful if the user’s selection can be remembered, either on the server side or on the client side.
+      </p>
+      <p>The need for high-contrast style sheets can be stored in an NP set using the following common terms:</p>
+      <ul>
+        <li><code>highContrastEnabled</code>: this term has a Boolean data type; its default value is “false”;</li>
+        <li><code>highContrastTheme</code>: this term can have one of the following values: black-white, white-black, yellow-black, black-yellow, lime-black (“black-white” stand for black text on a white background, “white-black” stands for white text on a black background, <abbr>etc.</abbr>).</li>
+      </ul>
+      <p>The reason behind the separate term <code>highContrastEnabled</code> instead of simply adding “default” as a value to <code>highContrastTheme</code>,
+        is that some people may not use a high-contrast theme all the time, but if they need one, it should be the one identified by <code>highContrastTheme</code>.
+        <code>highContrastEnabled</code> then simply switches high contrast on or off, depending on when it is needed.
+      </p>
+      <p>A website with <abbr>GPII</abbr> support and style sheets for high contrast may then use the preferences for high contrast in a user’s <abbr>NP</abbr> set to enable the appropriate style sheet across the whole website.
+      </p>
+      <h4>Additional Links</h4>
+      <ul>
+        <li><a href="https://www.w3.org/TR/CSS21/media.html#q7.0">Media types</a> in <abbr>CSS</abbr> 2.1.</li>
+        <li>Adam Roberts: <a href="https://www.sitepoint.com/differences-html-xhtml/"><abbr>HTML</abbr> <abbr>vs</abbr> <abbr>XHTML</abbr>: Comparing Two Parsing Modes</a>, SitePoint, April 2014.</li>
+        <li><abbr>HTML</abbr>5.2 (<abbr>W3C</abbr> Recommendation 2017): <a href="https://www.w3.org/TR/html5/links.html#link-type-alternate">Link type “alternate”</a>.</li>
+        <li>The <a href="https://remexlabs.github.io/GTx_HDM1.2aX/">sample web site</a> for the third module in the course provides alternative style sheets.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Fonts and Other Text Characteristics</h3>
+      <p>Text is an important part of the web, and people’s need and preferences regarding text readability vary a lot.
+        For this reason, we will introduce a number of common terms that describe various characteristics of on-screen text.
+        Each of these can be translated into <abbr>CSS</abbr> rules, but they are also relevant to office formats (especially in word processing and spreadsheets).
+      </p>
+      <p>The common term fontSize defines a font size in points. This means that its value range is much more restricted than the value range of the <abbr>CSS</abbr> property <code>font-size</code>.
+        If an <abbr>NP</abbr> set does not contain a preference for <code>fontSize</code>, then the <!--@@split?-->website’s <abbr>CSS</abbr> rules apply as normal.
+        (Since we have no way to define different font sizes for different types of content, <abbr>e.g.</abbr> headings, <code>fontSize</code> will only apply to “normal” text, such as paragraphs, table cells and lists.)
+      </p>
+      <p>The common term <code>lineHeight</code> defines a frequently overlooked aspect of readability: the space between individual lines.
+        The value range for <code>lineHeight</code> is the same as for the <code>line-height</code> property in <abbr>CSS</abbr> 2.1 with the exclusion of the value “inherit”.
+        This means that you can use the value “normal”, a positive number value, a positive length value or a positive percentage.
+      </p>
+      <p>The remaining common terms in this unit define colours: <code>foregroundColour</code>, <code>backgroundColour</code>, <code>unvisitedLinkColour</code> and <code>visitedLinkColour</code>.
+        Each of these common terms accepts value from the <span lang="en-US"><abbr>CSS</abbr> Color Module</span> Level 3.
+        They describe the colours suggested by their names: <code>foregroundColour</code> sets the text colour, <code>backgroundColour</code> sets the background colour, <code>unvisitedLinkColour</code> sets the colour of links that have not been visited yet (according to the browser’s history), and <code>visitedLinkColour</code> sets the colour for links that have already been visited (again, according to the browser’s history).
+        Note that word processing documents and other office documents can also contain links, so the last two common terms would also apply to office software that supports <abbr>GPII</abbr>.
+      </p>
+      <p>Obviously, there are more text characteristics then we have described here, but the current set should be sufficient for this course.</p>
+      <h4>Additional Links</h4>
+      <ul>
+        <li>Web<abbr>AIM</abbr>: <a href="http://webaim.org/techniques/fonts/">Fonts</a>.</li>
+        <li><a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size">“font-size”</a>
+          in Cascading Style Sheets Level 2 Revision 1 (<abbr>CSS</abbr> 2.1) Specification (<abbr>W3C</abbr> Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work).</li>
+        <li><a href="https://www.w3.org/TR/CSS21/visudet.html#propdef-line-height">“line-height”</a>
+          in Cascading Style Sheets Level 2 Revision 1 (<abbr>CSS</abbr> 2.1) Specification (<abbr>W3C</abbr> Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work).</li>
+        <li><a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">“Color units”</a>
+          in <span lang="en-US"><abbr>CSS</abbr> Color Module</span> Level 3 (<abbr>W3C</abbr> Recommendation 07 June 2011).</li>
+        <li>Laura Franz: <a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/">Size Matters: Balancing Line Length And Font Size In Responsive Web Design</a>,
+          Smashing Magazine, 29 September 2014.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Navigation</h3>
+      <p>Navigation is an important aspect of a website’s usability. While overall site navigation is very important, this unit is concerned with navigation within single pages. There are two common terms that can help improve intra-page navigation.</p>
+      <p>The common term <code>displaySkiplinks</code> defines whether and on which conditions “<strong>skip links</strong>” or skip navigation links should be visible.
+        A skip link is a link at the top of a web page that allows keyboard users to jump over or skip to the main content. Keyboard users rely a lot on the <kbd>TAB</kbd> key to move between elements such as links and form elements.
+        The types of elements that can be reached in this way are called “focusable elements”, and the sequence of elements that you can reach by pressing <kbd>TAB</kbd> is known as the TAB sequence.
+        Since, in the TAB sequence, the navigation menu is usually located between the top of the page and the main content, keyboard users would need a lot of <kbd>TAB</kbd> key presses to arrive at the main content.
+      </p>
+      <p>Skiplinks are not necessarily visible: some sites make them visible by default, other sites make them visible only when they receive keyboard focus (typically as a result of tabbing through the links on the page),
+        and still other sites hide them under all circumstances, so only screen reader users can become aware of their presence.
+        However, for sighted users who use a mouse or other pointing device, visible skiplinks are simply visual clutter.
+        The common term <code>displaySkiplinks</code> determines if and when skiplinks should be visible.
+        The term’s values are self-explanatory: “always” means that skiplinks should always be visible, “onfocus” means that they should only be visible when they receive keyboard focus, and “never” means that they should always remain invisible.
+      </p>
+      <p>The common term <code>tableOfContents</code> determines whether a table of contents should be added to the page.
+        This assumes that the page contains correctly marked up headings (using the <abbr>HTML</abbr> elements <code>h1</code>, <code>h2</code>, <code>h3</code>, etcetera) and does not apply to all types of web content.
+        For example, a page that consists only of a search form (as in many search engines), a single form or single-page web application may not have any headings, and a table of contents would then be irrelevant.
+      </p>
+      <p>On a web page with a lot of context and correctly marked up headings, JavaScript can be used to generate a (hierarchical) list of links to the actual headings; this would then serve as a table of contents.
+        The common term <code>tableOfContents</code> has a Boolean data type; the value “true” would indicate that a table of contents is required.
+        However, it is up to the website that implements <abbr>GPII</abbr> support to determine whether generating a table of contents is appropriate and, if yes, whether one is already hard-coded into the <abbr>HTML</abbr> content.
+        If the <abbr>HTML</abbr> content already contains a table of contents, no additional work is needed.
+      </p>
+      <h4>Additional Links</h4>
+      <ul>
+        <li>Web<abbr>AIM</abbr>: <a href="http://webaim.org/techniques/skipnav/">"Skip Navigation" Links</a>.
+          Note: this page has a “skip to main content” link that only becomes visible when it receives keyboard focus.</li>
+        <li>Emily Coward: <a href="https://www.nomensa.com/blog/2004/what-are-skip-links">What are Skip Links</a>, Nomensa Humanising Technology Blog, 2 December 2004.
+          Note: this page also has a “skip to content” link that only becomes visible when it receives keyboard focus.</li>
+        <li>The web site <a href="http://globalaccessibilitynews.com/">Global Accessibility News</a> has a skiplink that is always visible.</li>
+        <li>The web site of <a href="https://www.smashingmagazine.com/">Smashing Magazine</a> used to have a skiplink that is never visible but that now becomes visible when you tab through the content (search for "<code>#main</code>" in the source code).</li>
+      </ul>
+    </section>
+    <section>
+      <h3></h3>
+      <p>
+      </p>
+      <p>
+      </p>
+      <p>
+      </p>
+    </section>
+    <section>
+      <h3></h3>
+      <p>
+      </p>
+    </section>
+  </section>
+
+  <section class="module" id="module-3">
+    <h2>Hands On: Personalizing a Web Interface (Module 3)</h2>
+    <section>
+      <h3>Introduction to the Hands-on Task</h3>
+      <div data-type="vimeo" data-video-id="222337728"></div>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+  </section>
+
+  <section class="module" id="module-4">
+    <h2>Introduction to <abbr>GPII</abbr> (Module 4)</h2>
+    <section>
+      <h3>Personalization and <abbr>GPII</abbr></h3>
+      <div data-type="vimeo" data-video-id="222331682"></div>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+    <section>
+      <h3></h3>
+    </section>
+  </section>
+  </main>
+
+  <footer>
+    <p id="licence">
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./img/cc_by_4.0_88x31.png" /></a><br />
+    <strong><a href="https://remexlabs.github.io/GTx_HDM1.2aX/">Example Site for GTx HDM1.2aX</a></strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    <br />Copyright © <span lang="de">Hochschule der Medien</span> (<abbr>HdM</abbr>) / Stuttgart Media University, 2017 – 2018.
+    </p>
+  </footer>
+  <!-- http://localhost:8088/github/gtx-hdm1-2ax/ -->
+  <!-- Online at https://remexlabs.github.io/gtx-hdm1-2ax/ -->
+  <script src="js/plyr-2.0.18/plyr.js"></script>
+  <script>
+    /*
+    var options = {
+      captions: { defaultActive: true }, 
+      controls: ['play', 'progress', 'currrent-time', 'volume', 'mute', 'captions', 'fullscreen'], 
+      tooltips: { controls: true, seek: true},
+      hideControls: false,
+      displayDuration: true,
+      disableContextMenu: false
+    };*/
+    var options = {
+      "captions": {
+        "defaultActive": true
+      },
+      "controls": [
+        "play-large",
+        "progress",
+        "currrent-time",
+        "volume",
+        "mute",
+        "captions",
+        "fullscreen"
+      ],
+      "tooltips": {
+        "controls": true,
+        "seek": true
+      },
+      "hideControls": false,
+      "displayDuration": true,
+      "disableContextMenu": false
+    };
+    plyr.setup( options );
+  </script>
+</body>
+</html>
