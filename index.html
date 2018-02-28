@@ -18,8 +18,7 @@
     figure { margin-left: 20px; border: 1px solid gray; padding: 5px; }
     blockquote p.quote-source { margin-top: 0; }
     div.hdm-vimeo iframe { display:none; /*visibility: hidden;*/ }
-    div.plyr { display: none; }
-    div.plyr:before { content: 'Hidden Plyr / vimeo video'; }
+    /**/div.plyr { display: none; }
   </style>
   <link rel="stylesheet" href="js/plyr-2.0.18/plyr.css" />
   <meta name="robots" content="noindex, nofollow" />
@@ -584,18 +583,71 @@
       </ul>
     </section>
     <section>
-      <h3></h3>
-      <p>
+      <h3>Videos: Captions and Audio Description</h3>
+      <p>Thanks to broadband internet, video has become very common on the web. However, video is not always accessible to all types of users.</p>
+      <p><strong>Blind and visually impaired people</strong> cannot see (or cannot see well) what is happening on the screen.
+        Visual information that is essential for understanding what is happening in the video can be described in audio.
+        This is known as “<strong>audio description</strong>”.
+        There are two ways to provide audio description: either you add audio descriptions in pauses in the dialogue, or you create a separate video where the video is paused at each point that requires a description, and add the audio description in that pause.
       </p>
-      <p>
+      <p><strong>People who are Deaf or hard of hearing</strong> cannot hear (or cannot hear well) the audio, which includes both dialogue and non-speech sounds.
+        The most important method of making video accessible for this user group is the addition of captions.
+        <strong>Captions</strong> are text overlaid over the video (usually at the bottom) that transcribe both the dialogue and important non-speech sounds.
+        <strong>Non-speech sounds</strong> can come from the people in the video (<abbr>e.g.</abbr> sighing, sobbing), animals (<abbr>e.g.</abbr> “dog barking”) or objects (<abbr>e.g.</abbr> “door slams”).
+        Lyrics should also be transcribed. Some captions use different colours for different speakers in a scene.
+        There are two types of captions: <strong>open captions</strong> are always visible, while <strong>closed captions</strong> can be shown or hidden on demand.
+        Captions should not be confused with subtitles, which provide a translation of the dialogue without covering non-speech sounds.
       </p>
-      <p>
+      <p><strong>Sign language</strong> is a means of communication that can serve as an accessible alternative to both dialogue and written text.
+        It is normally not used as an alternative to speech in web-based video, but it is used in news broadcasts in certain countries. Technically, it can also be added to web content, for example, in videos next to text content or videos that pop up on demand. Sign language is usually provided by filming sign language interpreters. There are also software programs that can translate text into sign language gestures performed by an animated character.
+        These sign language avatars have sometimes met with resistance from the Deaf community.
       </p>
+      <p>The goal of this unit is not to teach you how to create captions, audio descriptions or sign language videos, but to introduce you to the common terms relevant to these accessibility techniques.</p>
+      <ul>
+        <li><code>captionsEnabled</code> is a boolean term for enabling or disabling captions.</li>
+        <li><code>subtitlesEnabled</code> is a boolean term for enabling or disabling subtitles, which provide a translation of the dialogue.</li>
+        <li><code>audioDescriptionEnabled</code> is a boolean term for enabling or disabling audio description. In practice this will usually require an alternative video containing audio description.</li>
+        <li><code>signLanguageEnabled</code> is a boolean term for enabling or disabling sign language.</li>
+        <li><code>signLanguage</code> is a term that identifies the sign language that a user needs.
+          Sign language are identified using the same standard as other languages, <abbr>i.e.</abbr> by means of values based on 
+          <a href="https://tools.ietf.org/rfc/bcp/bcp47.txt"><abbr>IETF</abbr> <abbr>BCP</abbr> 47</a> (Best Common Practice 47: “Tags for Identifying Languages”, defined by the Internet Engineering Task Force).
+          For example, American Sign Language is identified as “ase”, British Sign Language (<abbr>BSL</abbr>) is identified as “bfi”, German Sign Language (<span lang="de">Deutsche Gebärdensprache</span>, <abbr>DGS</abbr>) is identified as “gsg”, etcetera.
+          Tags for sign language are different from tags for spoken languages such as English, German, etcetera, because there is no direct relationship between sign languages and spoken languages.
+        </li>
+      </ul>
+      <h4>Additional Links</h4>
+      <ul>
+        <li><a href="https://youdescribe.org/">YouDescribe</a>: free online tool for adding audio description to YouTube videos.</li>
+        <li>Media Access Australia: <a href="http://www.mediaaccess.org.au/web/how-to-audio-describe-a-youtube-video">How to Audio Describe a YouTube Video</a>: short instructions for using YouDescribe.</li>
+        <li><a href="https://www.youtube.com/watch?v=EKGOWavFvHc">We're The Superhumans</a>: example of a an audio-described video by Channel 4 (on YouTube, July 2016).
+          For comparison, watch the <a href="https://www.youtube.com/watch?v=IocLkk3aYlk">version without audio description</a>.
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=rxz23Jl1HLs">Audio description at the National Theatre</a>: short interview with an audio describer at the National Theatre (<abbr>UK</abbr>).</li>
+        <li><a href="https://www.youtube.com/watch?v=Az3RtN0ExMY">Sign Language and Audio Description in theatre</a>: video commissioned by the British Council.</li>
+        <li>Emily Griffin: <a href="http://www.3playmedia.com/2016/05/18/5-thoughtful-tips-for-closed-captioning-videos/">5 Thoughtful Tips for Closed Captioning Videos</a>, 3 PlayMedia blog, 18 May 2016.</li>
+        <li>The <a href="http://asl.cs.depaul.edu/">American Sign Language Avatar Project</a> at DePaul University.</li>
+      </ul>
     </section>
     <section>
-      <h3></h3>
-      <p>
+      <h3>Advanced Adaptations</h3>
+      <p>The previous units introduced some of the ways in which web content can be adapted to the needs of various users.
+        The video “<abbr>HdM</abbr> Adaptable Online Banking Solution 2016” (below) demonstrates some other types of adaptations.
+        The video shows a simulation of an online banking interface with the following features:
       </p>
+      <ul>
+        <li>A collapsible control panel at the top that allows users to adapt features such as font size, line height and font face.</li>
+        <li>Optional pictograms that make the text content easier to understand for people with a reading impairment.</li>
+        <li>Optional sign language videos for the form elements.</li>
+        <li>A simplified user interface for people with an intellectual disability (<abbr>US</abbr> terminology) or a general learning disability (<abbr>UK</abbr> terminology).</li>
+      </ul>
+      <p>The research prototype in this video is one of the outcomes of the European projects Cloud4all and Prosperity4All,
+        which received funding from the European Union's Seventh Framework Programme (<abbr>FP7</abbr>/2007-2013) under the grant agreements
+        <a href="https://cordis.europa.eu/project/rcn/101353_en.html">No.289016 (Cloud4all)</a>
+        and
+        <a href="https://cordis.europa.eu/project/rcn/188922_en.html">No. No.610510 (Prosperity4All)</a>.
+      </p>
+      <!--@@YouTube video-->
+      <div data-type="youtube" data-video-id="ljtXSxbTtQA"></div>
     </section>
   </section>
 
@@ -606,16 +658,118 @@
       <div data-type="vimeo" data-video-id="222337728"></div>
     </section>
     <section>
-      <h3></h3>
+      <h3>Project: Making a Website Adaptive</h3>
+      <p>Your task in this module is to choose a website and to make it adapt to one or more preference sets.
+        Briefly put, the goal of the task is to write JavaScript code that can fetch an <abbr>NP</abbr> set, read it and apply one or more of the preferences to the website.
+        Below is a description of what you will need for this.
+      </p>
+      <p>First, you will need a website that you can make adaptive. If you have no website at your disposal, you can use a sample website that was created specifically for this course.
+        (This website will be described in the next unit.)
+      </p>
+      <p>Second, you will need a few preference sets with common terms.
+        A small set of <abbr>NP</abbr> sets is available on the website at <a href="https://remexlabs.github.io/GTx_HDM12aX_preferences/">https://remexlabs.github.io/GTx_HDM12aX_preferences/</a>.
+      </p>
+      <p>Finally, you will need to understand the meaning of the common terms. Some of these were explained in the second module of the course.
+        For a more complete overview, see the page <a href="https://remexlabs.github.io/GTx_HDM1.2aX/gpii-common-terms.html">https://remexlabs.github.io/GTx_HDM1.2aX/gpii-common-terms.html</a> (which is part of the sample website prepared for this task).
+      </p>
+      <p>So what can you do for this task?</p>
+      <p>First, you need to choose a website you can work on.
+        Second, have a look at the <abbr>NP</abbr> sets and make sure that you understand the common terms that are used in them.
+        Third, decide which common terms you want to support in the website, for example, activating a contrast theme, setting a different font size, generating a table of contents, or writing a translation of a captions file and JavaScript to activating the language version required in the <abbr>NP</abbr> set.
+        You will also need to implement some interface controls to allow a user (or a tester) to pick the NP set that should be applied to the site.
+      </p>
     </section>
     <section>
-      <h3></h3>
+      <h3>Example Website</h3>
+      <p>For the purpose of the exercise, you can either use an example website prepared by the course team, or a website that you created yourself.
+        This section describes the example website prepared for the course.
+      </p>
+      <p>You can find the code for the sample website in the GitHub repository at <a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">https://github.com/REMEXLabs/GTx_HDM1.2aX</a>.
+        <!-- You can also download the code as a compressed file from edX; however, due to size restrictions, this compressed file does not contain the example video. -->
+      </p>
+      <p>This website uses static <abbr>HTML</abbr>, <abbr>CSS</abbr> and a little bit of JavaScript.
+        It contains pages that use various types of <abbr>HTML</abbr> elements, such as headings, a navigation menu, images, a table, a form, a definition list and a few embedded videos (from Vimeo and YouTube).
+        Most of the content of the site is available under a <a href="https://creativecommons.org/licenses/by/4.0/" lang="en-US">Creative Commons Attribution 4.0 International License</a>,
+        and the JavaScript is available under the Apache License 2.0.
+        This should give you a lot of liberty to reuse its content.
+      </p>
+      <p>You can see the site “live” at <a href="https://remexlabs.github.io/GTx_HDM1.2aX/index.html">https://remexlabs.github.io/GTx_HDM1.2aX/index.html</a>.</p>
+      <p>The website has a number of characteristics that you won't find on most other websites:</p>
+      <ol>
+        <li>The website has several "alternative style sheets".
+          The link to the default style sheet has the attribute <code>rel="stylesheet"</code>;
+          the links to the other style sheets have the attribute <code>rel="alternate stylesheet"</code>.
+          These alternative style sheets have no effect on the webpage, unless they are explicitly loaded.
+          In some browsers, this can be done by the user. For example, in Firefox by going to the <code>View</code> menu and opening the <code>Page Style</code> submenu, and selecting one of the other style sheets.
+          (The <code>title</code> attributes on the <code>link</code> element are used to populate the list of style sheets under <code>Page Style</code>.
+          You can make the menu bar visible by opening the Firefox settings, then going to <code>Customize</code> and "<code>Show/Hide Toolbars</code>".)
+        </li>
+        <li>The page "Publisher information / Impressum" is irrelevant if your website is not subject to German law.</li>
+        <li>The 404 page is only relevant if you "publish" your fork of the website on GitHub pages.
+          It uses <abbr>YAML</abbr> front matter that is supported on GitHub pages but not necessarily on other hosts or servers.
+          (See also <a href="https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/">Creating a custom 404 page for your GitHub Pages site</a> on GitHub Help.)
+        </li>
+      </ol>
+      <p>However, make sure to check the code in the GitHub repository instead of only looking at the “live” version.
+        The repository contains a number of resources that you won’t find by only looking at the live version,
+        for example an <abbr>MP4</abbr> video, captions files for the video, a few JavaScript files and a test page (named ‘testpage.html’) that uses some of the JavaScript functions.
+        Even if you are not very familiar with the use of JavaScript to fetch and parse <abbr>JSON</abbr> files, the example code should help you get over this hurdle, so you can focus on the more interesting aspect of making the web content adaptive.
+      </p>
     </section>
     <section>
-      <h3></h3>
-    </section>
-    <section>
-      <h3></h3>
+      <h3>Running the Example Website on a Local Server</h3>
+      <p>You can run the example website directly from the file system, since it does not rely on server-side scripts.
+        However, for a more realistic experience, you may want to run it on a locally installed server.
+        This is especially important for the XmlHttpRequests that fetch the <abbr>NP</abbr> sets.
+        Unless you want to add features that rely on server-side scripts (<abbr>e.g.</abbr> server-side JavaScript on Node.js, <abbr>PHP</abbr>, <abbr>ASP</abbr>.NET or <abbr>JSP</abbr>), most web servers will suit your needs.
+        Below are a few pointers for course participants who have not used a local web server before.
+      </p>
+      <p>The <strong>Apache <abbr>HTTP</abbr> Server</strong>, which many people simply call “Apache”, is a free and open-source cross-platform web server.
+        It is available from the website <a href="https://httpd.apache.org/">https://httpd.apache.org/</a>.
+        On <abbr>GNU</abbr>/Linux, it is usually part of the package system and can be installed using the usual package installation commands
+        (<abbr>e.g.</abbr> <kbd>sudo dnf install httpd</kbd> on recent versions of Fedora, <kbd>sudo apt-get install apache2</kbd> on Ubuntu, or <kbd>sudo yum install httpd</kbd> on some other GNU/Linux distributions).
+        For Windows, you will need to download a binary from the Apache website.
+        In Mac OS, Apache is already built-in, but you will need to access the command line in order to enable the server.
+      </p>
+      <p><strong>Apache Tomcat</strong> is a free and open-source Java Servlet Container, but you can also use it as a local web server to serve static <abbr>HTML</abbr> pages.
+        On <abbr>GNU</abbr>/Linux, Apache Tomcat is not usually part of the package system, so you typically need to download an archive file and extract it locally.
+        For Windows, you will need to download an installer from the Apache Tomcat website: <a href="http://tomcat.apache.org/">http://tomcat.apache.org/</a>.
+        For Mac OS, you will also need to download a ZIP file from the Apache Tomcat website. Apache Tomcat requires Java.
+      </p>
+      <p>On Microsoft Windows, you may also consider <strong><abbr>IIS</abbr> Express</strong>, a lightweight version of Microsoft’s <abbr>IIS</abbr> (Internet Information Services).
+        It can be downloaded and installed separately, or as part of some versions of Visual Studio (but not Visual Studio Code).
+      </p>
+      <p>It is also possible to install a <strong><abbr>XAMPP</abbr></strong> or <strong><abbr>LAMP</abbr></strong> software bundle that includes not only a web server but also a database management system and interpreters for server-side scripting languages.
+        <abbr>XAMPP</abbr> includes the Apache <abbr>HTTP</abbr> server, the MariaDB database and interpreters for <abbr>PHP</abbr> and Perl.
+        <abbr>LAMP</abbr> includes the Apache <abbr>HTTP</abbr> server, the MySQL database and an interpreter for <abbr>PHP</abbr>.
+        (The “L” stands for Linux; versions for Windows are referred to as <abbr>WAMP</abbr>; versions for Mac<abbr>OS</abbr> are referred to as <abbr>MAMP</abbr>.) 
+      </p>
+      <p>Finally, some integrated development environments (<abbr>IDEs</abbr>) for web development come with a local server built in.
+        One example of this WebStorm by JetBrains.
+      </p>
+      <p>Note that you should not run a publicly accessible server without taking a number of security precautions.
+        This applies especially to Apache Tomcat and <abbr>IIS</abbr> Express.
+      </p>
+      <h4>Additional Links</h4>
+      <ul>
+        <li>Apache Software Foundation: <a href="http://tomcat.apache.org/">Apache Tomcat</a>.</li>
+        <li>Apache Software Foundation: <a href="https://httpd.apache.org/">Apache <abbr>HTTP</abbr> Server</a>.</li>
+        <li>Microsoft: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=1038">Microsoft Internet Information Services (<abbr>IIS</abbr>) 7.5 Express</a> (for Microsoft Windows versions from Windows XP to Windows 10).</li>
+        <li>Microsoft: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48264">Internet Information Services (<abbr>IIS</abbr>) 10.0 Express</a> (requires Windows 7 or newer).</li>
+        <li>Tech Lecture (YouTube channel): <a href="https://www.youtube.com/watch?v=1j3MKZ9NlVY">Installing on Apache2 Webserver in Fedora 25 || httpd install</a> (March 2017).</li>
+        <li>Basic Linux Installation Configuration (YouTube channel): <a href="https://www.youtube.com/watch?v=nRfofESvbYk">Apache Tutorial install and run Apache web server in Ubuntu Linux</a> (July 2016).</li>
+        <li>Cloud Network (YouTube channel): <a href="https://www.youtube.com/watch?v=xyd9EoO-1nk">How to Install and Configure Apache Tomcat 8.0.23 in Ubuntu Server 16.04, CentOS 7 &amp; Fedora 24</a> (June 2015).</li>
+        <li>HowtoForge: <a href="https://www.howtoforge.com/tutorial/how-to-install-apache-tomcat-8-5-on-ubuntu-16-04/">How to Install and Configure Apache Tomcat 8.5 on Ubuntu 16.04</a>.</li>
+        <li>Wolf Paulus: <a href="https://wolfpaulus.com/java/tomcat-jessie/">Installing Java 8 and Tomcat 8 on Debian Jessie or Raspbian or RedHat</a> (7 June 2015).</li>
+        <li><a href="https://www.youtube.com/watch?v=bUkhS3GdVC4">Tomcat - How to Install and Run Tomcat on Mac</a> (YouTube, August 2016).</li>
+        <li>ProgrammingKnowledge (YouTube channel): <a href="https://www.youtube.com/watch?v=h_qQOVDTxo8">How to Install Apache Tomcat on Mac OS X</a>,
+          and/or Codeblind:
+          <a href="http://www.codebind.com/mac-osx/install-apache-tomcat-mac-os-x/">How to Install Apache Tomcat on Mac OS X </a> (July 2017).</li>
+        <li>Apache Friends: <a href="https://www.apachefriends.org/"><abbr>XAMPP</abbr> Installers and Downloads</a>.</li>
+        <li>Ubuntu Community Help Wiki: <a href="https://help.ubuntu.com/community/ApacheMySQLPHP">ApacheMySQLPHP</a> (<abbr>LAMP</abbr> on Ubuntu).</li>
+        <li>JetBrains: <a href="http://www.jetbrains.com/webstorm/features/">WebStorm: Features</a>.</li>
+        <li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Comparison_of_web_server_software">Comparison of web server software</a>.</li>
+      </ul>
     </section>
   </section>
 
@@ -624,6 +778,9 @@
     <section>
       <h3>Personalization and <abbr>GPII</abbr></h3>
       <div data-type="vimeo" data-video-id="222331682"></div>
+    </section>
+    <section>
+      <h3></h3>
     </section>
     <section>
       <h3></h3>
