@@ -112,7 +112,7 @@
     </section>
     <section>
       <h3>Welcome</h3>
-      <div class="hdm-vimeo" data-type="vimeo" data-video-id="222236107"></div>
+      <div class="hdm-vimeo" data-plyr='{ "captions": { "defaultActive": true }}' data-type="vimeo" data-video-id="222236107"></div>
     </section>
     <section>
       <h3>Barriers, Accessibility and Usability</h3>
@@ -1153,13 +1153,12 @@
   <footer>
     <p id="licence">
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./img/cc_by_4.0_88x31.png" /></a><br />
-    <strong><a href="https://remexlabs.github.io/GTx_HDM1.2aX/">Example Site for GTx HDM1.2aX</a></strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
+    <strong><a href="https://remexlabs.github.io/gtx-hdm1-2ax/">User Interface Personalization</a></strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     <br />Copyright © <span lang="de">Hochschule der Medien</span> (<abbr>HdM</abbr>) / Stuttgart Media University, 2017 – 2018.
     </p>
   </footer>
   <!-- http://localhost:8088/github/gtx-hdm1-2ax/ -->
-  <!-- Online at https://remexlabs.github.io/gtx-hdm1-2ax/ -->
   <script src="js/plyr-2.0.18/plyr.js"></script>
   <script>
     /*
@@ -1172,9 +1171,6 @@
       disableContextMenu: false
     };*/
     var options = {
-      "captions": {
-        "defaultActive": true
-      },
       "controls": [
         "play-large",
         "progress",
@@ -1187,6 +1183,9 @@
       "tooltips": {
         "controls": true,
         "seek": true
+      },
+      "captions": {
+        "defaultActive": true
       },
       "hideControls": false,
       "displayDuration": true,
