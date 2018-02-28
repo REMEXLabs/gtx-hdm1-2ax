@@ -10,15 +10,14 @@
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/yellow-on-black.css" title="Yellow on black (high contrast)" id="rel-css-yellow-on-black" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/lime-on-black.css" title="Lime on black (high contrast)" id="rel-css-lime-on-black" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/brown-on-buff.css" title="Brown on buff (low contrast)" id="rel-css-brown-on-buff" />
-  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
   -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" id="rel-css-default" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
   <style type="text/css">
-    main > section { margin: 5px; border: 1px dotted red; }
-    section > section { margin: 5px; border: 1px dotted green; }
+    /*main > section { margin: 5px; border: 1px dotted red; }
+    section > section { margin: 5px; border: 1px dotted green; }*/
     figure { margin-left: 20px; border: 1px solid gray; padding: 5px; }
     blockquote p.quote-source { margin-top: 0; }
-    div.hdm-vimeo iframe { display:none; /*visibility: hidden;*/ }
-    /**/div.plyr { display: none; }
   </style>
   <link rel="stylesheet" href="js/plyr-2.0.18/plyr.css" />
   <meta name="robots" content="noindex, nofollow" />
@@ -28,7 +27,7 @@
 
 <body id="home">
   <header>
-    <h1><span class="h1txt">User Interface Personalization (Single-Page Version)</h1>
+    <h1><span class="h1txt">User Interface Personalization (Single-Page Version)</span></h1>
   </header>
 
   <main id="main">
@@ -75,12 +74,13 @@
       </ul>
       <h4>Module&nbsp;2: Understanding Personalization on Web Pages and Sites</h4>
       <ul>
-        <li>Adaptable features of web sites and web applications:</li>
-        <ul>
-          <li>How are such features relevant to personalization for accessibility?</li>
-          <li>How can these features be modeled as "preference terms" for personalization?</li>
-          <li>Examples include overall style (stylesheets), text characteristics (font face, font size, alignment, line-height, &hellip;) and videos (captions, audio description).</li>
-        </ul>
+        <li>Adaptable features of web sites and web applications:
+          <ul>
+            <li>How are such features relevant to personalization for accessibility?</li>
+            <li>How can these features be modeled as "preference terms" for personalization?</li>
+            <li>Examples include overall style (stylesheets), text characteristics (font face, font size, alignment, line-height, &hellip;) and videos (captions, audio description).</li>
+          </ul>
+        </li>
         <li>What accessibility needs are not supported by the above types of personalization?</li>
         <li>Advanced adaptations and how to model them as preference terms.</li>
       </ul>
@@ -158,7 +158,7 @@
         </figure>
         -->
       </section>
-      <section>
+      <section class="additional-links">
         <h4>Additional Links</h4>
         <p>The discussion of widgets for increasing font size or changing colours is only meant as an introduction to accessibility barriers and how some websites have tried to address these barriers. The description is actually not meant to encourage web developers to integrate such widgets into their websites. This type of widgets is no longer state of the art; articles arguing against them started appearing in early 2007; for example:</p>
         <ul>
@@ -258,29 +258,31 @@
         Adaptive web design creates more work than responsive web design, but it also creates more freedom, since it allows you to create different experiences for different mobile devices.
         However, the primary focus is on device capabilities, not on users.
       </p>
-      <h4>Additional Links</h4>
-      <ul>
-        <li>Gregg C. Vanderheiden:
-          <a href="http://trace.umd.edu/publications/design-html-mosaic-pages-increase-their-accessibility-users-disabilities-strategies">Design of <abbr>HTML</abbr> (Mosaic) Pages to Increase their Accessibility to Users with Disabilities Strategies for Today and Tomorrow</a>,
-          31 January 1995. Probably the earliest extant example of accessibility guidelines for the web.
-        </li>
-        <li><abbr>W3C</abbr> Wiki:
-          <a href="https://www.w3.org/wiki/Accessibility_basics">Accessibility Basic</a>.
-          This wiki page briefly discusses Tesco’s separate website.
-        </li>
-        <li>Law Office of Lainey Feingold:
-          <a href="http://www.lflegal.com/2014/02/safeway-accessibility/">Separate is Not Equal: Good News for Grocery Delivery</a>,
-          8 February 2014. afeway used to have a separate text-only site for blind customers. In 2014, the company decided to update the main site to the Web Content Accessibility Guidelines 2.0 Level AA and remove the separate site.
-        </li>
-        <li>Web<abbr>AIM</abbr>:
-          <a href="http://webaim.org/articles/design/textonly">Design Considerations: Text-only Versions</a>. 
-        </li>
-        <li>Automatic adaptation of user interfaces has also been proposed as a way to personalize interfaces based on culture.
-          See Katharina Reinecke &amp; Abraham Bernstein:
-          <a href="http://www.misq.org/skin/frontend/default/misq/pdf/appendices/2013/ReineckeBernstein.pdf">Knowing What a User Likes: A Design Science Approach to Interfaces That Automatically Adapt to Culture</a>,
-          <i class="journal"><abbr>MIS</abbr> Quarterly</i>, <abbr>Vol.</abbr> 37, <abbr>No.</abbr> 2, <abbr>pp.</abbr> 427-453/June 2013.
-        </li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Gregg C. Vanderheiden:
+            <a href="http://trace.umd.edu/publications/design-html-mosaic-pages-increase-their-accessibility-users-disabilities-strategies">Design of <abbr>HTML</abbr> (Mosaic) Pages to Increase their Accessibility to Users with Disabilities Strategies for Today and Tomorrow</a>,
+            31 January 1995. Probably the earliest extant example of accessibility guidelines for the web.
+          </li>
+          <li><abbr>W3C</abbr> Wiki:
+            <a href="https://www.w3.org/wiki/Accessibility_basics">Accessibility Basic</a>.
+            This wiki page briefly discusses Tesco’s separate website.
+          </li>
+          <li>Law Office of Lainey Feingold:
+            <a href="http://www.lflegal.com/2014/02/safeway-accessibility/">Separate is Not Equal: Good News for Grocery Delivery</a>,
+            8 February 2014. afeway used to have a separate text-only site for blind customers. In 2014, the company decided to update the main site to the Web Content Accessibility Guidelines 2.0 Level AA and remove the separate site.
+          </li>
+          <li>Web<abbr>AIM</abbr>:
+            <a href="http://webaim.org/articles/design/textonly">Design Considerations: Text-only Versions</a>. 
+          </li>
+          <li>Automatic adaptation of user interfaces has also been proposed as a way to personalize interfaces based on culture.
+            See Katharina Reinecke &amp; Abraham Bernstein:
+            <a href="http://www.misq.org/skin/frontend/default/misq/pdf/appendices/2013/ReineckeBernstein.pdf">Knowing What a User Likes: A Design Science Approach to Interfaces That Automatically Adapt to Culture</a>,
+            <i class="journal"><abbr>MIS</abbr> Quarterly</i>, <abbr>Vol.</abbr> 37, <abbr>No.</abbr> 2, <abbr>pp.</abbr> 427-453/June 2013.
+          </li>
+        </ul>
+      </section>
     </section>
     <section>
       <h3>Adaptable Versus Adaptive User Interfaces</h3>
@@ -318,26 +320,28 @@
         Another consequence is that it would be worthwhile to invest some time and effort in finding out what settings users would change most (assuming they can find them) and make these settings easy to find.
         This second piece of advice would also apply to adaptive user interfaces: when a user interfaces changes automatically and the user does not like this change, it should be easy for the user to find out how to undo it.
       </p>
-      <h4>Additional Links</h4>
-      <ul>
-        <li>Jared Spool: <a href="https://www.uie.com/brainsparks/2011/09/14/do-users-change-their-settings/">Do users change their settings?</a>,
-          <i class="blog">User Interface Engineering Blog</i>, 14 September 2011.
-        </li>
-        <li>Wendy E. Mackay:
-          <a href="http://www.lri.fr/~mackay/pdffiles/CHI91.Triggers.pdf">Triggers and Barriers to Customizing Software</a>.
-          <abbr>CHI</abbr> '91 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, New Orleans, Louisiana, 27 April – 2 May 1991. New York: <abbr>ACM</abbr>, 1991. <abbr>P.</abbr> 153–1.
-        </li>
-        <li>Joanna McGrenere; Ronald M. Baecker; Kellogg S. Booth:
-          <a href="https://dl.acm.org/citation.cfm?id=503406">An evaluation of a multiple interface design solution for bloated software</a>.
-          <abbr>CHI</abbr> '02 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, Minneapolis, Minnesota, 20 – 25 April 2002. New York: <abbr>ACM</abbr>, 2002. Pages 164–170.
-        </li>
-        <!--@@
-        <li>Nikola Banovic; Fanny Chevalier; Tovi Grossman; George Fitzmaurice:
-          <a href="https://dl.acm.org/citation.cfm?id=2208666">Triggering triggers and burying barriers to customizing software</a>,
-          <abbr>CHI</abbr> '12 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, Austin, Texas, 05 – 10 May 2012. New York: <abbr>ACM</abbr>, 2012. Pages 2717–2726.
-        -->
-        </li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Jared Spool: <a href="https://www.uie.com/brainsparks/2011/09/14/do-users-change-their-settings/">Do users change their settings?</a>,
+            <i class="blog">User Interface Engineering Blog</i>, 14 September 2011.
+          </li>
+          <li>Wendy E. Mackay:
+            <a href="http://www.lri.fr/~mackay/pdffiles/CHI91.Triggers.pdf">Triggers and Barriers to Customizing Software</a>.
+            <abbr>CHI</abbr> '91 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, New Orleans, Louisiana, 27 April – 2 May 1991. New York: <abbr>ACM</abbr>, 1991. <abbr>P.</abbr> 153–1.
+          </li>
+          <li>Joanna McGrenere; Ronald M. Baecker; Kellogg S. Booth:
+            <a href="https://dl.acm.org/citation.cfm?id=503406">An evaluation of a multiple interface design solution for bloated software</a>.
+            <abbr>CHI</abbr> '02 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, Minneapolis, Minnesota, 20 – 25 April 2002. New York: <abbr>ACM</abbr>, 2002. Pages 164–170.
+          </li>
+          <!--@@
+          <li>Nikola Banovic; Fanny Chevalier; Tovi Grossman; George Fitzmaurice:
+            <a href="https://dl.acm.org/citation.cfm?id=2208666">Triggering triggers and burying barriers to customizing software</a>,
+            <abbr>CHI</abbr> '12 Proceedings of the <abbr>SIGCHI</abbr> Conference on Human Factors in Computing Systems, Austin, Texas, 05 – 10 May 2012. New York: <abbr>ACM</abbr>, 2012. Pages 2717–2726.
+          -->
+          </li>
+        </ul>
+      </section>
     </section>
   </section>
 
@@ -436,12 +440,14 @@
       </p>
       <p>Finally, the value for "<code>name</code>" gives a human-readable name to the set of preferences for a specific context. This name can be used in editing tools for <abbr>NP</abbr> sets.
       </p>
-      <h4>Additional Links</h4>
-      <p>These links are not required reading for the course.</p>
-      <ul>
-        <li><a href="https://raisingthefloor.org/">Raising the Floor</a>, the organisation that initiated and co-ordinates work on <abbr>GPII</abbr>.</li>
-        <li><a href="https://www.iso.org/standard/41521.html"><abbr>ISO</abbr>/<abbr>IEC</abbr> 24751-1:2008</a>: “Information technology -- Individualized adaptability and accessibility in e-learning, education and training -- Part 1: Framework and reference model”.</li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <p>These links are not required reading for the course.</p>
+        <ul>
+          <li><a href="https://raisingthefloor.org/">Raising the Floor</a>, the organisation that initiated and co-ordinates work on <abbr>GPII</abbr>.</li>
+          <li><a href="https://www.iso.org/standard/41521.html"><abbr>ISO</abbr>/<abbr>IEC</abbr> 24751-1:2008</a>: “Information technology -- Individualized adaptability and accessibility in e-learning, education and training -- Part 1: Framework and reference model”.</li>
+        </ul>
+      </section>
     </section>
     <section>
       <h3>Alternative Style Sheets</h3>
@@ -508,13 +514,15 @@
       </p>
       <p>A website with <abbr>GPII</abbr> support and style sheets for high contrast may then use the preferences for high contrast in a user’s <abbr>NP</abbr> set to enable the appropriate style sheet across the whole website.
       </p>
-      <h4>Additional Links</h4>
-      <ul>
-        <li><a href="https://www.w3.org/TR/CSS21/media.html#q7.0">Media types</a> in <abbr>CSS</abbr> 2.1.</li>
-        <li>Adam Roberts: <a href="https://www.sitepoint.com/differences-html-xhtml/"><abbr>HTML</abbr> <abbr>vs</abbr> <abbr>XHTML</abbr>: Comparing Two Parsing Modes</a>, SitePoint, April 2014.</li>
-        <li><abbr>HTML</abbr>5.2 (<abbr>W3C</abbr> Recommendation 2017): <a href="https://www.w3.org/TR/html5/links.html#link-type-alternate">Link type “alternate”</a>.</li>
-        <li>The <a href="https://remexlabs.github.io/GTx_HDM1.2aX/">sample web site</a> for the third module in the course provides alternative style sheets.</li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li><a href="https://www.w3.org/TR/CSS21/media.html#q7.0">Media types</a> in <abbr>CSS</abbr> 2.1.</li>
+          <li>Adam Roberts: <a href="https://www.sitepoint.com/differences-html-xhtml/"><abbr>HTML</abbr> <abbr>vs</abbr> <abbr>XHTML</abbr>: Comparing Two Parsing Modes</a>, SitePoint, April 2014.</li>
+          <li><abbr>HTML</abbr>5.2 (<abbr>W3C</abbr> Recommendation 2017): <a href="https://www.w3.org/TR/html5/links.html#link-type-alternate">Link type “alternate”</a>.</li>
+          <li>The <a href="https://remexlabs.github.io/GTx_HDM1.2aX/">sample web site</a> for the third module in the course provides alternative style sheets.</li>
+        </ul>
+      </section> 
     </section>
     <section>
       <h3>Fonts and Other Text Characteristics</h3>
@@ -536,18 +544,20 @@
         Note that word processing documents and other office documents can also contain links, so the last two common terms would also apply to office software that supports <abbr>GPII</abbr>.
       </p>
       <p>Obviously, there are more text characteristics then we have described here, but the current set should be sufficient for this course.</p>
-      <h4>Additional Links</h4>
-      <ul>
-        <li>Web<abbr>AIM</abbr>: <a href="http://webaim.org/techniques/fonts/">Fonts</a>.</li>
-        <li><a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size">“font-size”</a>
-          in Cascading Style Sheets Level 2 Revision 1 (<abbr>CSS</abbr> 2.1) Specification (<abbr>W3C</abbr> Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work).</li>
-        <li><a href="https://www.w3.org/TR/CSS21/visudet.html#propdef-line-height">“line-height”</a>
-          in Cascading Style Sheets Level 2 Revision 1 (<abbr>CSS</abbr> 2.1) Specification (<abbr>W3C</abbr> Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work).</li>
-        <li><a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">“Color units”</a>
-          in <span lang="en-US"><abbr>CSS</abbr> Color Module</span> Level 3 (<abbr>W3C</abbr> Recommendation 07 June 2011).</li>
-        <li>Laura Franz: <a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/">Size Matters: Balancing Line Length And Font Size In Responsive Web Design</a>,
-          Smashing Magazine, 29 September 2014.</li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Web<abbr>AIM</abbr>: <a href="http://webaim.org/techniques/fonts/">Fonts</a>.</li>
+          <li><a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size">“font-size”</a>
+            in Cascading Style Sheets Level 2 Revision 1 (<abbr>CSS</abbr> 2.1) Specification (<abbr>W3C</abbr> Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work).</li>
+          <li><a href="https://www.w3.org/TR/CSS21/visudet.html#propdef-line-height">“line-height”</a>
+            in Cascading Style Sheets Level 2 Revision 1 (<abbr>CSS</abbr> 2.1) Specification (<abbr>W3C</abbr> Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work).</li>
+          <li><a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">“Color units”</a>
+            in <span lang="en-US"><abbr>CSS</abbr> Color Module</span> Level 3 (<abbr>W3C</abbr> Recommendation 07 June 2011).</li>
+          <li>Laura Franz: <a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/">Size Matters: Balancing Line Length And Font Size In Responsive Web Design</a>,
+            Smashing Magazine, 29 September 2014.</li>
+        </ul>
+      </section>
     </section>
     <section>
       <h3>Navigation</h3>
@@ -572,15 +582,17 @@
         However, it is up to the website that implements <abbr>GPII</abbr> support to determine whether generating a table of contents is appropriate and, if yes, whether one is already hard-coded into the <abbr>HTML</abbr> content.
         If the <abbr>HTML</abbr> content already contains a table of contents, no additional work is needed.
       </p>
-      <h4>Additional Links</h4>
-      <ul>
-        <li>Web<abbr>AIM</abbr>: <a href="http://webaim.org/techniques/skipnav/">"Skip Navigation" Links</a>.
-          Note: this page has a “skip to main content” link that only becomes visible when it receives keyboard focus.</li>
-        <li>Emily Coward: <a href="https://www.nomensa.com/blog/2004/what-are-skip-links">What are Skip Links</a>, Nomensa Humanising Technology Blog, 2 December 2004.
-          Note: this page also has a “skip to content” link that only becomes visible when it receives keyboard focus.</li>
-        <li>The web site <a href="http://globalaccessibilitynews.com/">Global Accessibility News</a> has a skiplink that is always visible.</li>
-        <li>The web site of <a href="https://www.smashingmagazine.com/">Smashing Magazine</a> used to have a skiplink that is never visible but that now becomes visible when you tab through the content (search for "<code>#main</code>" in the source code).</li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Web<abbr>AIM</abbr>: <a href="http://webaim.org/techniques/skipnav/">"Skip Navigation" Links</a>.
+            Note: this page has a “skip to main content” link that only becomes visible when it receives keyboard focus.</li>
+          <li>Emily Coward: <a href="https://www.nomensa.com/blog/2004/what-are-skip-links">What are Skip Links</a>, Nomensa Humanising Technology Blog, 2 December 2004.
+            Note: this page also has a “skip to content” link that only becomes visible when it receives keyboard focus.</li>
+          <li>The web site <a href="http://globalaccessibilitynews.com/">Global Accessibility News</a> has a skiplink that is always visible.</li>
+          <li>The web site of <a href="https://www.smashingmagazine.com/">Smashing Magazine</a> used to have a skiplink that is never visible but that now becomes visible when you tab through the content (search for "<code>#main</code>" in the source code).</li>
+        </ul>
+      </section>
     </section>
     <section>
       <h3>Videos: Captions and Audio Description</h3>
@@ -615,18 +627,20 @@
           Tags for sign language are different from tags for spoken languages such as English, German, etcetera, because there is no direct relationship between sign languages and spoken languages.
         </li>
       </ul>
-      <h4>Additional Links</h4>
-      <ul>
-        <li><a href="https://youdescribe.org/">YouDescribe</a>: free online tool for adding audio description to YouTube videos.</li>
-        <li>Media Access Australia: <a href="http://www.mediaaccess.org.au/web/how-to-audio-describe-a-youtube-video">How to Audio Describe a YouTube Video</a>: short instructions for using YouDescribe.</li>
-        <li><a href="https://www.youtube.com/watch?v=EKGOWavFvHc">We're The Superhumans</a>: example of a an audio-described video by Channel 4 (on YouTube, July 2016).
-          For comparison, watch the <a href="https://www.youtube.com/watch?v=IocLkk3aYlk">version without audio description</a>.
-        </li>
-        <li><a href="https://www.youtube.com/watch?v=rxz23Jl1HLs">Audio description at the National Theatre</a>: short interview with an audio describer at the National Theatre (<abbr>UK</abbr>).</li>
-        <li><a href="https://www.youtube.com/watch?v=Az3RtN0ExMY">Sign Language and Audio Description in theatre</a>: video commissioned by the British Council.</li>
-        <li>Emily Griffin: <a href="http://www.3playmedia.com/2016/05/18/5-thoughtful-tips-for-closed-captioning-videos/">5 Thoughtful Tips for Closed Captioning Videos</a>, 3 PlayMedia blog, 18 May 2016.</li>
-        <li>The <a href="http://asl.cs.depaul.edu/">American Sign Language Avatar Project</a> at DePaul University.</li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li><a href="https://youdescribe.org/">YouDescribe</a>: free online tool for adding audio description to YouTube videos.</li>
+          <li>Media Access Australia: <a href="http://www.mediaaccess.org.au/web/how-to-audio-describe-a-youtube-video">How to Audio Describe a YouTube Video</a>: short instructions for using YouDescribe.</li>
+          <li><a href="https://www.youtube.com/watch?v=EKGOWavFvHc">We're The Superhumans</a>: example of a an audio-described video by Channel 4 (on YouTube, July 2016).
+            For comparison, watch the <a href="https://www.youtube.com/watch?v=IocLkk3aYlk">version without audio description</a>.
+          </li>
+          <li><a href="https://www.youtube.com/watch?v=rxz23Jl1HLs">Audio description at the National Theatre</a>: short interview with an audio describer at the National Theatre (<abbr>UK</abbr>).</li>
+          <li><a href="https://www.youtube.com/watch?v=Az3RtN0ExMY">Sign Language and Audio Description in theatre</a>: video commissioned by the British Council.</li>
+          <li>Emily Griffin: <a href="http://www.3playmedia.com/2016/05/18/5-thoughtful-tips-for-closed-captioning-videos/">5 Thoughtful Tips for Closed Captioning Videos</a>, 3 PlayMedia blog, 18 May 2016.</li>
+          <li>The <a href="http://asl.cs.depaul.edu/">American Sign Language Avatar Project</a> at DePaul University.</li>
+        </ul>
+      </section>
     </section>
     <section>
       <h3>Advanced Adaptations</h3>
@@ -646,7 +660,6 @@
         and
         <a href="https://cordis.europa.eu/project/rcn/188922_en.html">No. No.610510 (Prosperity4All)</a>.
       </p>
-      <!--@@YouTube video-->
       <div data-type="youtube" data-video-id="ljtXSxbTtQA"></div>
     </section>
   </section>
@@ -750,26 +763,28 @@
       <p>Note that you should not run a publicly accessible server without taking a number of security precautions.
         This applies especially to Apache Tomcat and <abbr>IIS</abbr> Express.
       </p>
-      <h4>Additional Links</h4>
-      <ul>
-        <li>Apache Software Foundation: <a href="http://tomcat.apache.org/">Apache Tomcat</a>.</li>
-        <li>Apache Software Foundation: <a href="https://httpd.apache.org/">Apache <abbr>HTTP</abbr> Server</a>.</li>
-        <li>Microsoft: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=1038">Microsoft Internet Information Services (<abbr>IIS</abbr>) 7.5 Express</a> (for Microsoft Windows versions from Windows XP to Windows 10).</li>
-        <li>Microsoft: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48264">Internet Information Services (<abbr>IIS</abbr>) 10.0 Express</a> (requires Windows 7 or newer).</li>
-        <li>Tech Lecture (YouTube channel): <a href="https://www.youtube.com/watch?v=1j3MKZ9NlVY">Installing on Apache2 Webserver in Fedora 25 || httpd install</a> (March 2017).</li>
-        <li>Basic Linux Installation Configuration (YouTube channel): <a href="https://www.youtube.com/watch?v=nRfofESvbYk">Apache Tutorial install and run Apache web server in Ubuntu Linux</a> (July 2016).</li>
-        <li>Cloud Network (YouTube channel): <a href="https://www.youtube.com/watch?v=xyd9EoO-1nk">How to Install and Configure Apache Tomcat 8.0.23 in Ubuntu Server 16.04, CentOS 7 &amp; Fedora 24</a> (June 2015).</li>
-        <li>HowtoForge: <a href="https://www.howtoforge.com/tutorial/how-to-install-apache-tomcat-8-5-on-ubuntu-16-04/">How to Install and Configure Apache Tomcat 8.5 on Ubuntu 16.04</a>.</li>
-        <li>Wolf Paulus: <a href="https://wolfpaulus.com/java/tomcat-jessie/">Installing Java 8 and Tomcat 8 on Debian Jessie or Raspbian or RedHat</a> (7 June 2015).</li>
-        <li><a href="https://www.youtube.com/watch?v=bUkhS3GdVC4">Tomcat - How to Install and Run Tomcat on Mac</a> (YouTube, August 2016).</li>
-        <li>ProgrammingKnowledge (YouTube channel): <a href="https://www.youtube.com/watch?v=h_qQOVDTxo8">How to Install Apache Tomcat on Mac OS X</a>,
-          and/or Codeblind:
-          <a href="http://www.codebind.com/mac-osx/install-apache-tomcat-mac-os-x/">How to Install Apache Tomcat on Mac OS X </a> (July 2017).</li>
-        <li>Apache Friends: <a href="https://www.apachefriends.org/"><abbr>XAMPP</abbr> Installers and Downloads</a>.</li>
-        <li>Ubuntu Community Help Wiki: <a href="https://help.ubuntu.com/community/ApacheMySQLPHP">ApacheMySQLPHP</a> (<abbr>LAMP</abbr> on Ubuntu).</li>
-        <li>JetBrains: <a href="http://www.jetbrains.com/webstorm/features/">WebStorm: Features</a>.</li>
-        <li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Comparison_of_web_server_software">Comparison of web server software</a>.</li>
-      </ul>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Apache Software Foundation: <a href="http://tomcat.apache.org/">Apache Tomcat</a>.</li>
+          <li>Apache Software Foundation: <a href="https://httpd.apache.org/">Apache <abbr>HTTP</abbr> Server</a>.</li>
+          <li>Microsoft: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=1038">Microsoft Internet Information Services (<abbr>IIS</abbr>) 7.5 Express</a> (for Microsoft Windows versions from Windows XP to Windows 10).</li>
+          <li>Microsoft: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48264">Internet Information Services (<abbr>IIS</abbr>) 10.0 Express</a> (requires Windows 7 or newer).</li>
+          <li>Tech Lecture (YouTube channel): <a href="https://www.youtube.com/watch?v=1j3MKZ9NlVY">Installing on Apache2 Webserver in Fedora 25 || httpd install</a> (March 2017).</li>
+          <li>Basic Linux Installation Configuration (YouTube channel): <a href="https://www.youtube.com/watch?v=nRfofESvbYk">Apache Tutorial install and run Apache web server in Ubuntu Linux</a> (July 2016).</li>
+          <li>Cloud Network (YouTube channel): <a href="https://www.youtube.com/watch?v=xyd9EoO-1nk">How to Install and Configure Apache Tomcat 8.0.23 in Ubuntu Server 16.04, CentOS 7 &amp; Fedora 24</a> (June 2015).</li>
+          <li>HowtoForge: <a href="https://www.howtoforge.com/tutorial/how-to-install-apache-tomcat-8-5-on-ubuntu-16-04/">How to Install and Configure Apache Tomcat 8.5 on Ubuntu 16.04</a>.</li>
+          <li>Wolf Paulus: <a href="https://wolfpaulus.com/java/tomcat-jessie/">Installing Java 8 and Tomcat 8 on Debian Jessie or Raspbian or RedHat</a> (7 June 2015).</li>
+          <li><a href="https://www.youtube.com/watch?v=bUkhS3GdVC4">Tomcat - How to Install and Run Tomcat on Mac</a> (YouTube, August 2016).</li>
+          <li>ProgrammingKnowledge (YouTube channel): <a href="https://www.youtube.com/watch?v=h_qQOVDTxo8">How to Install Apache Tomcat on Mac OS X</a>,
+            and/or Codeblind:
+            <a href="http://www.codebind.com/mac-osx/install-apache-tomcat-mac-os-x/">How to Install Apache Tomcat on Mac OS X </a> (July 2017).</li>
+          <li>Apache Friends: <a href="https://www.apachefriends.org/"><abbr>XAMPP</abbr> Installers and Downloads</a>.</li>
+          <li>Ubuntu Community Help Wiki: <a href="https://help.ubuntu.com/community/ApacheMySQLPHP">ApacheMySQLPHP</a> (<abbr>LAMP</abbr> on Ubuntu).</li>
+          <li>JetBrains: <a href="http://www.jetbrains.com/webstorm/features/">WebStorm: Features</a>.</li>
+          <li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Comparison_of_web_server_software">Comparison of web server software</a>.</li>
+        </ul>
+      </section>
     </section>
   </section>
 
@@ -780,19 +795,357 @@
       <div data-type="vimeo" data-video-id="222331682"></div>
     </section>
     <section>
-      <h3></h3>
+      <h3>What Is <abbr>GPII</abbr>?</h3>
+      <p>The first half of this course introduced the concepts of adaptive software and personalization, and showed how some components of <abbr>GPII</abbr> can be used to make websites adapt to user profiles or <abbr>NP</abbr> sets.
+        In the fourth and last module of the course, we will focus on the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) as a whole.
+      </p>
+      <p>The <abbr>GPII</abbr> is much more than a set of concepts and mechanisms for making websites personalizable. <abbr>GPII</abbr>’s goals include the following:</p>
+      <ol>
+        <li>Enabling people to invoke the <strong>accessibility features</strong> they need <strong>anytime, anywhere and on any device</strong>.
+          The primary focus is on accessibility for people with disabilities and elderly people (who typically don’t consider themselves as disabled), although the infrastructure would be able to activate or tweak any features or settings that can be described by means of preference terms.
+        </li>
+        <li>Making it easier for people with disabilities and elderly people to <strong>find accessibility solutions</strong>, especially assistive technologies, that suit their needs.
+          Assistive technologies (<abbr>AT</abbr>) are technologies that enable people with disabilities to perform tasks that would otherwise be impossible or very difficult to perform.
+          For example, a screen reader is a software program that enables a blind person to get information from the screen of a <abbr>PC</abbr>, tablet or smartphone through synthetic speech, Braille or both.
+          Without a screen reader, it would be impossible for a fully blind person to use a <abbr>PC</abbr> or a smartphone.
+          The range of available assistive technologies is quite broad, but identifying the appropriate <abbr>AT</abbr> for a specific individual can still prove challenging.
+        </li>
+        <li>Lowering the cost of developing new types of assistive technologies.</li>
+        <li>Making it easier to develop mainstream software that is accessible and personalizable.</li>
+        <li>Making it easier for libraries and other public access points to serve visitors or customers with a wide range of abilities. 
+          “Easier” here means less expensive and more realistic than current approaches, which often require one-on-one assistance (or, in the worst case, no support at all).
+        </li>
+        <li>Protecting the privacy of users of <abbr>GPII</abbr>, especially users of the auto-adaptation infrastructure.
+          The auto-adaptation functionality relies on user profiles or <abbr>NP</abbr> sets.
+          These <abbr>NP</abbr> sets do not contain names or e-mail addresses and they do not directly describe a user’s disabilities or capabilities (<abbr>e.g.</abbr> blindness or cognitive impairment).
+          However, they do describe the assistive technologies and accessibility features people need, and it is possible to infer personal information from these data, especially when they can be linked to a person’s identity.
+          For this reason, security is an important aspect of the <abbr>GPII</abbr>.
+        </li>
+      </ol>
+      <p>The software components of the software infrastructure are made available under open-source licences such as the <abbr>BSD</abbr> 3-Clause licence, the <abbr>MIT</abbr> licence or the Apache licence 2.0, in order to allow reuse in both open-source and closed-source software.
+        These licences were chosen because widespread reuse contributes more to the goals of <abbr>GPII</abbr> than licences that require implementers to contribute back or change their own licences.
+      </p>
+      <p>Work on the <abbr>GPII</abbr> started in 2011 through several research and development projects funded by the European Union, the <abbr>USA</abbr> and Canada,
+        and with support from several companies, such as <abbr>IBM</abbr>, Microsoft and Mozilla.
+      </p>
+      <p>In the remainder of this module, we will focus on the first goal, especially the framework for auto-adaptation and personalization.</p>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li><abbr>GPII</abbr>: <a href="https://gpii.net/about">About the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>)</a>.</li>
+          <li><abbr>GPII</abbr>: <a href="https://gpii.net/content/cloud4all">Cloud4all</a>. 
+            This page contains a diagram showing the major components of <abbr>GPII</abbr> and which projects have contributed to which components.
+          </li>
+          <li><a href="https://raisingthefloor.org/">Raising the Floor</a> (the consortium that co-ordinates the work around <abbr>GPII</abbr>).</li>
+          <li>The <a href="https://github.com/GPII"><abbr>GPII</abbr> repositories on GitHub</a>.
+            Start at the <a href="https://github.com/GPII/universal">repository “universal”</a>, which contains the framework core. See also the <a href="http://gpii.github.io/">overview of core repositories</a>.
+          </li>
+          <li>The <a href="https://wiki.gpii.net/w/Main_Page"><abbr>GPII</abbr> wiki</a>.</li>
+        </ul>
+      </section>
     </section>
     <section>
-      <h3></h3>
+      <h3>The <abbr>GPII</abbr> Adaptation Framework</h3>
+      <p>The <abbr>GPII</abbr> adaptation framework has been developed to work across platforms and devices, and has been tested on Microsoft Windows, <abbr>GNU</abbr>/Linux with the GNOME desktop (in the Fedora distribution), Android and Java <abbr title="Micro Edition">ME</abbr>.
+        It currently requires installation by the user, which is a barrier to widespread adoption.
+        Eventually, it is meant to get integrated into various operating systems, similar to the accessibility features for Microsoft Windows that were originally a separate download.
+        (The Access Pack for Microsoft Windows 3.x and Windows <abbr>NT</abbr> was developed at the Trace <abbr>R &amp; D</abbr> Center at the University of Wisconsin, Madison, in the early 1990s, and later became part of the Windows operating system.)
+      </p>
+      <p>Below is a description of the framework components that are used in a typical adaptation process.</p>
+      <p>First, a user “logs in” on a <abbr>GPII</abbr>-supported system. The term “logging in” is here used very loosely; it refers to any means of identification supported by <abbr>GPII</abbr>.
+        In theory, this identification may be triggered by a log in on an operating system or a web site, but until <abbr>GPII</abbr> has been integrated into operating systems, identification requires other mechanisms.
+        The <strong>User Listener</strong> is the component that is responsible for getting the user’s key or token and sending it to the next component in the framework.
+        This key or token should be as anonymous as possible, preferably a random string.
+        The key can be presented to the User Listener in various ways: it can be stored in a <abbr>USB</abbr> stick, it can stored as an <abbr title="near-field communication">NFC</abbr> tag that is read by an <abbr title="radio-frequency identification">RFID</abbr> reader, or it can even by stored as a <abbr title="Quick Response">QR</abbr> tag that you read with a smartphone camera.
+      </p>
+      <p>The User Listener sends to the key or token to the <strong>Flow Manager</strong>, a component that orchestrates the communication between all the other components in the framework.
+        The Flow Manager sends the token to the <strong>Preferences Server</strong>, where all the NP sets are stored, to fetch the matching <abbr>NP</abbr> set.
+      </p>
+      <p>The next step in the process is finding out the characteristics of the user’s device and the solutions that are installed on it.
+        “Solutions” is a general term for the accessibility features in the operating system itself and in any <abbr>GPII</abbr>-supported applications that are installed on it, and the assistive technologies that are installed on the device.
+        The <strong>Device Reporter</strong> is the component that detects the available and reports this information back to the Flow Manager.
+      </p>
+      <p>If the user has given their permission for this, the Flow Manager can also send a request to the <strong>Environment Reporter</strong> to provide data about the user’s physical environment, especially about noise and light conditions that may require additional adaptations.
+        (For example, noise may make it impossible to hear the dialogue in a video; if this condition is detected, the system may decide to enable captions.)
+      </p>
+      <p>Now that the framework has collected the required data about the user’s needs and preferences, the characteristics of the device and its software and, possibly, the characteristics of the environment, it is almost ready to apply the needs and preferences to the device.
+        Depending on how well the needs and preferences can be mapped to settings in the available solutions, the Flow Manager will send requests to the <strong>Transformer</strong>, a <strong>Matchmaker</strong> or both.
+        These components are described in more detail in the next step; for now it is sufficient to know that they output settings that can be applied to the available solutions.
+      </p>
+      <p>When the Flow Manager has received the output of the Transformer or the Matchmaker, it sends this data to the <strong>Lifecycle Manager</strong>.
+        The Lifecycle Manager performs several tasks.
+        It first takes a  snapshot of the device’s current settings, so they can be restored when the user “logs out” again.
+        (This is especially important for public devices, for example computers in libraries or school labs. The device should be restored to its original state before the next person starts using it.)
+        The Lifecycle Manager then invokes the appropriate <strong>Settings Handler</strong> for each of the required solutions.
+        Applications store settings in various formats, such as <abbr>INI</abbr>, <abbr>XML</abbr> and <abbr>JSON</abbr>, so the Settings Handler needs to write the output from the Transformer or the Matchmaker to the appropriate files and in the appropriate format.
+        The Lifecycle Manager then invokes the Lifecycle Handler to launch the solution.
+      </p>
+      <p>When the user has finished using the device, they can log out using the same mechanism as for logging in, namely by removing the <abbr>USB</abbr> drive, presenting the <abbr>NFC</abbr> tag to the <abbr>RFID</abbr> reader again or by scanning the <abbr>QR</abbr> tag again.
+        The Lifecycle Handler will then stop the solution (or solutions) and the Lifecycle Manager will restore the original settings.
+      </p>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Microsoft:
+            <a href="https://news.microsoft.com/1998/10/22/greg-lowney-microsofts-director-of-accessibility-is-motivated-by-the-millions-of-people-his-work-will-benefit/">Greg Lowney: Microsoft’s Director of Accessibility is Motivated by the Millions of People His Work Will Benefit</a>, 22 October 1998.
+          </li>
+          <li>Trace Research &amp; Development Center: <a href="https://trace.umd.edu/news/201204/vista-includes-trace-developed-access-features">Vista Includes Trace-Developed Access Features</a>, 13 March 2007.
+            (The Trace <abbr>R &amp; D</abbr> Center moved from the University of Wisconsin, Madison to the University of Maryland in August 2016.
+          </li>
+          <li><abbr>GPII</abbr> wiki: <a href="https://wiki.gpii.net/w/GPII_Architecture_Overview"><abbr>GPII</abbr> Architecture Overview</a>.
+            A detailed description of the adaptation framework and its components.
+          </li>
+        </ul>
+      </section>
     </section>
     <section>
-      <h3></h3>
+      <h3>Matchmaking Between Preferences Sets and Solutions</h3>
+      <p>The previous unit briefly mentioned the Transformer and the Matchmaker.
+        These two components are responsible for matching the content of the NP set with the solutions detected by the Device Reporter.
+      </p>
+      <p>An <abbr>NP</abbr> set expresses the user’s needs and preferences using “common terms”, “application-specific terms” or a combination of these.
+        The <strong>common terms</strong> constitute a kind of lingua franca for expressing preferences; they can also be thought of as “application-neutral terms”.
+        Common terms are names for settings or preferences that would apply across many applications or devices.
+        This type of term should be stable and not change much (if at all).
+        In the current <abbr>GPII</abbr> implementation, these terms belong in the namespace <code>http://registry.gpii.net/common/</code>.
+      </p>
+      <p><strong>Application-specific terms</strong> are names for settings or preferences that apply to a specific device or application, and that have a name, data type and value space that are determined by the device or application for which the term was defined.
+        A solution’s application-specific terms belong in the namespace <code>http://registry.gpii.net/applications/</code> followed by the solution’s ID.
+        (Each supported solution has a unique ID in <abbr>GPII</abbr>.)
+        For example, the application-specific terms for Orca, a screen reader developed by the GNOME project, are in the namespace <code>http://registry.gpii.net/applications/org.gnome.orca/</code>.
+      </p>
+      <p>Below is an example of an NP set that uses mostly common terms and two application-specific terms:</p>
+      <pre><code>{
+  "contexts": {
+    "gpii-default": {
+      "name": "Default preferences",
+      "preferences": {
+        "http://registry.gpii.net/common/language": "en-GB",
+        "http://registry.gpii.net/common/fontSize": 24,
+        "http://registry.gpii.net/common/linkAdaptation": "emphasizeLinks",
+        "http://registry.gpii.net/common/highContrastEnabled": true,
+        "http://registry.gpii.net/common/highContrastTheme": "white-black",
+        "http://registry.gpii.net/common/signLanguageEnabled": false,
+        "http://registry.gpii.net/applications/eu.gpii.olb": {
+          "lineSpacing": 2,
+          "inputsLarger": true
+        }
+      }
+    }
+  }
+}</code></pre>
+      <p>This is what the Preferences Server may return for the <abbr>NP</abbr> set <a href="https://github.com/GPII/universal/blob/master/testData/preferences/olb_Carla.json">olb_Carla</a> (<abbr>i.e.</abbr> just content of the block "flat").
+        For an example containing only application-specific terms, see 
+        <a href="https://github.com/GPII/universal/blob/master/testData/preferences/acceptanceTests/olb_applicationSpecific_01.json">olb_applicationSpecific_01.json</a>
+        or
+        <a href="https://github.com/GPII/universal/blob/master/testData/preferences/acceptanceTests/screenreader_nvda.json">screenreader_nvda.json</a>.
+      </p>
+      <p>As mentioned before, how an <abbr>NP</abbr> set gets applied to the local system depends on which solutions are available on the local system and how the user’s preferences are expressed in the <abbr>NP</abbr> set.
+        There are several possible scenarios. We will use the Windows screen reader <abbr>NVDA</abbr> as an example.
+      </p>
+      <ol>
+        <li>The Device Reporter data says that <abbr>NVDA</abbr> is available on the system, and the <abbr>NP</abbr> set has settings for <abbr>NVDA</abbr> expressed as application-specific terms.
+          (These preferences would be in the namespace <code>http://registry.gpii.net/applications/org.nvda-project/</code>. The Device Reporter data would contain the string <code>org.nvda-project</code>.)
+          In this case, the settings can be passed on to the next component, the Lifecycle Manager, which will invoke the Settings Handler to adapt the file where <abbr>NVDA</abbr>’s <abbr>INI</abbr> stores its settings (an <abbr>INI</abbr> file) and then invoke the Lifecycle Manager to start the screen reader.
+        </li>
+        <li>The Device Reporter data says that <abbr>NVDA</abbr> is available on the system, and the <abbr>NP</abbr> set contains screen reader settings expressed as common terms.
+          In this case, the Flow Manager will call the <strong>Transformer</strong> to convert the common terms into settings expressed in application-specific terms.
+          For example, the transformer would convert the common-term setting <code>‘"http://registry.gpii.net/common/speechRate": 200’</code>, which describes a speech rate in words per minute, 
+          into the application-specific setting <code>‘"http://registry.gpii.net/applications/org.nvda-project/speech.espeak.rate": 39’</code>.
+          This conversion example involves two actions: mapping a common term to an application-specific term, and converting the common term’s value.
+          The value conversion for some terms simply requires a simple mathematical function (<abbr>e.g.</abbr> multiplication) but for other terms requires mapping strings to other strings, or integers to strings, or strings to integers, etcetera.
+          The output of this conversion is passed on to the Lifecycle Manager, which then performs the same actions as in the previous scenario.
+        </li>
+        <li>The Device Reporter data says that <abbr>NVDA</abbr> is available on the system, and the <abbr>NP</abbr> set contains application-specific terms for a different screen reader, <abbr>e.g.</abbr> the Linux screen reader Orca.
+          There are two ways of dealing with this.
+          The first approach is using the <strong>Transformer</strong> to first convert the application-specific terms (and the associated values) for Orca into common-term settings, and then convert these common-term settings into application-specific terms for <abbr>NVDA</abbr>.
+          This approach assumes that there is a one-to-one mapping between common terms on the one hand and the application-specific terms for both screen readers on the other. This may not always be the case.
+          The other approach requires a more intelligent component known as a <strong>matchmaker</strong>. The Cloud4all project, which started the development of <abbr>GPII</abbr>, developed two different matchmakers.
+          The <strong>Rule-Based Matchmaker</strong> uses an ontology (using the Web Ontology Language or <abbr>OWL</abbr>) and a number of rules that are evaluated by the inference engine Apache Jena.
+          The <strong>Statistical Matchmaker</strong> uses existing <abbr>NP</abbr> sets as training data for a clustering algorithm and then uses the outcomes of this clustering algorithm to process matching requests.
+          (The capabilities of the matchmakers go beyond this scenario; more on this below.)
+          The <strong>Transformer</strong> and the <strong>matchmaker</strong> are not mutually exclusive; both components may work together in various ways.
+          For example, in a <abbr>GPII</abbr> setup where the Statistical Matchmaker acts as the default matchmaker, the Transformer may be used as a fallback for converting preference terms for which the Statistical Matchmaker has too few data to make reliable inferences.
+          The outcome of these inferences is passed on to the Lifecycle Manager, which then performs the same actions as in the previous scenarios.
+        </li>
+      </ol>
+      <p>The matchmakers need to fulfil a few tasks that go beyond simply translating terms and converting values.
+        In some cases, an <abbr>NP</abbr> set will contain preferences for a solution that combines two important functions, whereas the system that the user wants to use has no solution that combines these two functions.
+        In that case, the matchmaker will need to combine functions and settings from other available solutions.
+        For example, the SuperNova Access Suite for Microsoft Windows combines the functionality of a screen reader and a screen magnifier.
+        If someone uses both these functions on a computer at home and then logs in on a public computer that has Microsoft Windows and the open-source screen reader <abbr>NVDA</abbr> but not the SuperNova Access Suite, the matchmaker should have the intelligence to launch <abbr>NVDA</abbr> for its screen reader functionality and Windows’ built-in Magnifier for magnification.
+        This is not an ideal solution, for example because keyboard shortcuts, which are important for this type of user, will not be the same in this fallback setup, but still much better than not being able to use the computer at all.
+      </p>
+      <p>Another challenge is how to co-ordinate adaptations in solutions that work on different “layers”.
+        When someone uses the web on a desktop computer, it is possible to distinguish the following layers: the operating system itself, the assistive technologies installed on it, the web browser (including browser extensions and addons), the web content (which may be a web application) and any web-based assisistive technologies that <abbr>GPII</abbr> supports.
+        Some settings or adaptations should be enabled only at one specific layer and not at a different layer.
+        For example, when someone’s <abbr>NP</abbr> set contains a common term for large text, this can be realised in various ways:
+        by increasing the font size at the level of the operating system, by launching a built-in screen magnifier, by launching an installed third-party magnifier, by increasing the default font size in the browser settings, by increasing the zoom level in the browser or a browser addon, or by increasing the font size in the web app (assuming that the web app is supported by GPII). However, these adaptations should not be combined, since they would add up to a text size that is much bigger than what the user needs or wants.
+        The intelligence required to choose the layer or layers where the adaptation would be most appropriate goes beyond the capabilities of the Transformer.
+      </p>
+      <p>Note: In order to be able to introduce some new common terms, the previous modules in this course used different namespaces for the preference terms.
+        The addition of these new terms to the official namespace would require a process that is being defined in the revision of the <abbr title="International Organization for Standardization">ISO</abbr> standard <abbr>ISO</abbr>/<abbr>IEC</abbr> 24751.
+      </p>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li><abbr>GPII</abbr> wiki: <a href="https://wiki.gpii.net/w/Architecture_-_Available_transformation_functions">Architecture - Available transformation functions</a>.
+            The transformations use a declarative approach and are stored in <abbr>JSON</abbr> format.
+          </li>
+          <li><abbr>GPII</abbr> documentation: <a href="https://github.com/GPII/universal/blob/master/documentation/SolutionsRegistryFormat.md">Solutions Registry format</a>.</li>
+          <li><abbr>GPII</abbr> on GitHub: <a href="https://github.com/GPII/universal/blob/master/testData/solutions/win32.json5">the Windows “solutions registry”</a>.
+            A declarative description (in <abbr>JSON5</abbr>) of supported solutions on Microsoft Windows.
+            The blocks named <code>"capabilitiesTransformations"</code> describe transformations of common terms into application-specific terms;
+            the blocks named <code>"inverseCapabilitiesTransformations"</code> describe transformations in the opposite direction.
+          </li>
+        </ul>
+      </section>
     </section>
     <section>
-      <h3></h3>
+      <h3>Integrating a Solution</h3>
+      <p>In the previous modules, we learnt how to build basic adaptation functionality into a website. This process did not use any of the components in the <abbr>GPII</abbr> adaptation framework.
+        For example, instead of the <abbr>GPII</abbr>’s Preferences Server, we used a simple static website with publicly accessible example <abbr>NP</abbr> sets.
+        We did not “register” the example website as a <abbr>GPII</abbr>-supported application. For these reasons, we also had to work without the Flow Manager, since it would not know what to do with requests from an unidentified application.
+        We also used an example website in order to avoid the need of installing both the <abbr>GPII</abbr> framework and an example application.
+        But if we wanted to integrate a desktop solution with <abbr>GPII</abbr>, how would this work?
+      </p>
+      <h4>Installing <abbr>GPII</abbr></h4>
+      <p>First of all, you would need a locally installed version of the <abbr>GPII</abbr> adaptation framework.
+        The core of this framework is written in JavaScript and deployed on Node.js, a cross-platform JavaScript runtime environment.
+        You can do this either by creating a virtual machine using a tool such as Vagrant, or by manually setting it up on your operating system.
+        <abbr>GPII</abbr> has instructions for Microsoft Windows 10 and Fedora (with the GNOME desktop).
+        While installation on other GNU/Linux distributions and Mac <abbr>OS</abbr> is possible, <abbr>GPII</abbr> does not provide installation instructions for these operating systems.
+      </p>
+      <h4>Describing the Application and Its Settings</h4>
+      <p>Once you have <abbr>GPII</abbr> installed, you need to describe the application’s settings, or at least those settings that you want <abbr>GPII</abbr> to modify.
+        For each setting you would need the following types of information:
+      </p>
+      <ol>
+        <li>The setting’s name. Unless the settings are stored in a binary format, you can find these in the settings file (or files), which often use formats such as <abbr>INI</abbr>, <abbr>XML</abbr> or <abbr>JSON</abbr>.
+          For existing <abbr>GPII</abbr>-supported applications, the application-specific terms typically match the internal names of the corresponding settings.
+        </li>
+        <li>The setting’s data type (string, integer, float, boolean, …).</li>
+        <li>The setting’s value range.</li>
+        <li>The setting’s relationship with other settings, if any exist. For example, some setting are only present in a settings file if a certain other settings has a specific value, etcetera.</li>
+      </ol>
+      <p>You should also specify a unique identifier for your application.
+        The convention for the solution identifier is similar to the Java package naming conventions.
+        For example, the screen reader Orca (on <abbr>GNU</abbr>/Linux GNOME) is identified as <code>org.gnome.orca</code>.
+        The ID becomes part of the namespace for your solution’s settings, <abbr>e.g.</abbr> <code>http://registry.gpii.net/applications/org.gnome.orca/</code> for Orca settings.
+      </p>
+      <p>You also need to specify how the settings are stored and where.
+        How the settings are stored is important because <abbr>GPII</abbr> already supports some very common types, <abbr>e.g.</abbr> <abbr>XML</abbr> files, <abbr>JSON</abbr> files, <abbr>INI</abbr>, gsettings (on Linux) and the Windows Registry.
+      </p>
+      <h4>Registering the Application and Writing Transformations</h4>
+      <p>The next step is the creation of an entry for the application in the “solutions registry”.
+        The solutions registry is a machine-readable description (in <abbr>JSON</abbr>) of the <abbr>GPII</abbr>-supported applications on a specific platform.
+        <abbr>GPII</abbr> has solution registries for Microsoft Windows, <abbr>GNU</abbr>/Linux, Android and web-based solutions (web applications and web-based assistive technologies such as the screen reader WebAnywhere).
+        For desktop applications, this means adding an entry to the Windows solutions registry or the Linux solutions registry.
+      </p>
+      <p>The solutions registry entry for an application consists of several parts, which include the application’s ID, its name, a settingsHandlers block, and a number of blocks related to the application’s life cycle
+        (describing how to start and stop the application, how to configure its settings and how to restore its original settings).
+      </p>
+      <p>The settingsHandlers block describes, among other things, the type of settings used by the application (<abbr>INI</abbr> files, <abbr>XML</abbr>, <abbr>JSON</abbr>, <abbr>etc.</abbr>) and where to find the settings file.
+        It contains a block called "capabilitiesTransformations" that describes transformations from existing <abbr>GPII</abbr> common terms to the application’s application-specific terms.
+        These transformations can only be defined for common terms that can be mapped directly to application-specific terms.
+        For application-specific terms that have no counterpart in the <abbr>GPII</abbr> common terms, there will be no transformations.
+        This does not mean that the application cannot be integrated into <abbr>GPII</abbr> but that adaptations will require <abbr>NP</abbr> sets that rely more on application-specific terms for this specific application.
+      </p>
+      <p>The settingsHandlers block can also contain an optional <code>"inverseCapabilitiesTransformations"</code> block that describes transformations from the application’s application-specific terms to common terms.
+        If this block is missing, the framework will try to infer inverse transformations from the transformations in the <code>"capabilitiesTransformations"</code>.
+        If the transformations are trivial, inferring inverse transformations will not pose problems.
+        However, some transformations cannot be inversed automatically; for these transformations, it is also necessary to specify inverse transformations in the <code>"inverseCapabilitiesTransformations"</code> block.
+      </p>
+      <p>Once the registry entry is in place, <abbr>GPII</abbr> will be able to modify the application’s settings and start and stop the solution.
+        One of the important practical implications of this approach is that it does not require application developers to modify their own application’s source code.
+        It is therefore usually possible to integrate an application without help from the application’s developers.
+        (There are benefits to having access to the application’s developers, for example, if the settings are stored in a binary format.)
+      </p>
+      <p>Note: In practice, there are a few more details to take care of, especially creating a few example <abbr>NP</abbr> sets with common terms that are supported by the new transformers, and writing unit tests for the new transformers.</p>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li><a href="https://nodejs.org/">Node.js</a>.</li>
+          <li><a href="https://www.vagrantup.com/">Vagrant</a>.</li>
+          <li><abbr>GPII</abbr> wiki: <a href="https://wiki.gpii.net/w/Setting_Up_Your_Development_Environment">Setting Up Your Development Environment</a>.</li>
+          <li><abbr>GPII</abbr> documentation: <a href="https://github.com/GPII/universal/blob/master/documentation/SolutionsRegistryFormat.md">Solutions Registry format</a>.</li>
+          <li><abbr>GPII</abbr>: <a href="https://github.com/GPII/universal/blob/master/testData/solutions/win32.json5">Windows solutions registry</a>.</li>
+          <li><abbr>GPII</abbr>: <a href="https://github.com/GPII/universal/blob/master/testData/solutions/linux.json5">Linux solutions registry</a>.</li>
+          <li><abbr>GPII</abbr> documentation: <a href="https://github.com/GPII/universal/blob/master/documentation/SolutionsRegistryFormat.md">Solutions Registry Format</a>.</li>
+        </ul>
+      </section>
     </section>
     <section>
-      <h3></h3>
+      <h3>Course Summary</h3>
+      <p>Let’s review the content we have covered in this course.</p>
+      <h4>Introduction to Personalization</h4>
+      <p>In this module, you learnt what types of barriers people with disabilities can encounter on the web, what some websites do about this, and what the difference is between accessibility and usability.
+        You learnt what browser features and addons can be used to overcome some of these barriers and that many people don’t know that such features exist.
+        This led to the conclusion that adaptable interfaces are not enough and that adaptive user interfaces would benefit many users.
+      </p>
+      <h4>Understanding Personalization</h4>
+      <p>In this module, you learnt how adaptable features in a software application or a website can be described using “needs &amp; preferences terms”.
+        You then learnt how to describe a number of website features using needs &amp; preferences terms defined in the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>).
+      </p>
+      <h4>Hands-on: Personalizing a Website</h4>
+      <p>In this module, you got the opportunity to apply what you learnt in the previous modules to an example website.
+        You used some example needs &amp; preferences sets (<abbr>NP</abbr> sets) and JavaScript to adapt website features such as font size, foreground and background colour, and captions for videos.
+      </p>
+      <h4>Introduction to <abbr>GPII</abbr></h4>
+      <p>In the last module, you learnt how the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) enables personalization, what the main components in its adaptation framework are and what the process is for enabling <abbr>GPII</abbr> support for a desktop application.</p>
+    </section>
+    <section>
+      <h3>Where to Go from Here?</h3>
+      <p>While <abbr>GPII</abbr> focuses on improving accessibility for people with disabilities and the elderly, this course did not assume any previous knowledge about accessibility.
+        If you would like to learn more about accessibility, there are many options:
+      </p>
+      <ul>
+        <li><a href="https://www.edx.org/course/information-communication-technology-ict-gtx-ict100x">Information and Communication Technology (<abbr>ICT</abbr>) Accessibility</a> is an archived course by Georgia Tech that is available on edX.
+          It requires 2 to 4 hours of effort per week for six weeks.</li>
+        <li><a href="https://www.futurelearn.com/courses/digital-accessibility">Digital Accessibility: Enabling Participation in the Information Society</a> is a five-week course on FutureLearn.
+          The course was created by the <abbr title="MOOC Accessibility Partnership">MOOCAP</abbr> consortium, which also created the course you have just finished.
+        </li>
+        <li>The World Wide Web Consortium’s 
+          <a href="https://www.w3.org/WAI/">Web Accessibility Initiative (<abbr>WAI</abbr>)</a>
+          is a good place to start learning about web accessibility.
+          The <abbr>WAI</abbr> Interest Group has a 
+          <a href="https://www.w3.org/WAI/IG/Overview.html#mailinglist">mailing list</a>
+          with a publicly accessible archive.</li>
+        <li><a href="http://webaim.org/">Web Accessibility in Mind (Web<abbr>AIM</abbr>)</a> is another good place to start learning about web accessibility.
+          The website has an interesting <a href="http://webaim.org/blog/">blog</a> and a lively 
+          <a href="http://webaim.org/discussion/">discussion group</a>.
+        </li>
+      </ul>
+      <p>There is no obvious place to learn more about adaptive user interfaces or personalization in general.
+        On the web, you can find two types of information about adaptive user interfaces.
+        The first type is information about how to build adaptive user interfaces for specific platforms or using specific user interface toolkits.
+        “Adaptive” here typically means that the user interface will adapt to devices with different screen sizes.
+        One example of this is <a href="https://developer.apple.com/design/adaptivity/">Apple’s Adaptive User Interfaces</a> for iOS.
+      </p>
+      <p>The second type is research papers on adaptive user interfaces in various domains such as e-learning, the web in general, smart homes and geovisualization. There are also a number of research prototypes.
+        Under “Additional Links” you will find references to a few papers that are available under Open Access conditions or in open repositories.
+      </p>
+      <section class="additional-links">
+        <h4>Additional Links</h4>
+        <ul>
+          <li>Alvarez-Cortes, Victor; Zárate, Víctor H.; Ramírez Uresti,  Jorge A.; Zayas, Benjamin E.:
+            <a href="https://www.intechopen.com/books/human-computer-interaction/current-challenges-and-applications-for-adaptive-user-interfaces">Current Challenges and Applications for Adaptive User Interfaces</a>,
+            in: Human-Computer Interaction, edited by Inaki Maurtua, 2009.
+          </li>
+          <li>Akiki, Pierre A.; Bandara, Arosha K.; Yu, Yijun:
+            <a href="http://oro.open.ac.uk/39583/">Integrating adaptive user interface capabilities in enterprise applications</a>,
+            36th International Conference on Software Engineering (<abbr>ICSE</abbr> 2014), 31 May-7 June, 2014, Hyderabad, India, <abbr>ACM</abbr>, 2014.
+          </li>
+          <li>Mayer, Christopher, <abbr>et al.</abbr>:
+            <a href="https://speckyboy.com/adaptive-user-interfaces/">A comparative study of systems for the design of flexible user interfaces</a>,
+            Journal of Ambient Intelligence and Smart Environments, <abbr>vol.</abbr> 8, <abbr>no.</abbr> 2, <abbr>pp.</abbr> 125-148, 2016.
+          </li>
+          <li>Stephen Moyers:
+            <a href="https://speckyboy.com/adaptive-user-interfaces/">Understanding the Potential of Adaptive User Interfaces</a>, 
+            Speckyboy, 30 May 2017.
+          </li>
+        </ul>
+      </section>
     </section>
   </section>
   </main>
