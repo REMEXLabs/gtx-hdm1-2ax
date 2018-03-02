@@ -137,6 +137,9 @@ tbody th {
   text-align: left;
 }
 
+figure { margin-left: 20px; border: 1px solid gray; padding: 5px; }
+blockquote p.quote-source { margin-top: 0; }
+iframe { border: 0; } /*replace frameborder attribute on iframe*/
 
 @media (min-width:320px) {
   main, nav {

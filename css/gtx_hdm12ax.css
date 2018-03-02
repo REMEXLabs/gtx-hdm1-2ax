@@ -149,8 +149,17 @@ code {
 }
 code.gpii-eu-term {
   background-color: transparent;
-  color: #B20000;
+  color: #B20000; /*@@todo remove or modify (currently not in use)*/
 }
+
+figure { margin-left: 20px; border: 1px solid gray; padding: 5px; }
+blockquote p.quote-source { margin-top: 0; }
+iframe { border: 0; } /*replace frameborder attribute on iframe*/
+
+ol#toc { counter-reset: module-num; list-style-type: none; margin-left: 0; padding-left: 0; }
+ol#toc > li:before {content: /*"Module "*/ counter(module-num) ". "; counter-increment: module-num; }
+ol#toc > li > ol { counter-reset: unit-num; list-style-type: none; }
+ol#toc > li > ol > li:before { counter-increment: unit-num; content: counter(module-num) "." counter(unit-num) ". "; }
 
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
