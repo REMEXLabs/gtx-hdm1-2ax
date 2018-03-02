@@ -13,13 +13,6 @@
   -->
   <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" id="rel-css-default" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
-  <style type="text/css">
-    /*main > section { margin: 5px; border: 1px dotted red; }
-    section > section { margin: 5px; border: 1px dotted green; }*/
-    figure { margin-left: 20px; border: 1px solid gray; padding: 5px; }
-    blockquote p.quote-source { margin-top: 0; }
-    iframe { border: 0; } /*replace frameborder attribute on iframe*/
-  </style>
   <link rel="stylesheet" href="js/plyr-2.0.18/plyr.css" />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
@@ -50,18 +43,58 @@
   </p>
 
   <p>Table of contents:</p>
-  <ul>
-    <li><a href="#module-1">Introduction to Personalization (Module 1)</a></li>
-    <li><a href="#module-2">Understanding Personalization on Web Pages and Sites (Module 2)</a></li>
-    <li><a href="#module-3">Hands On: Personalizing a Web Interface (Module 3)</a></li>
-    <li><a href="#module-4">Introduction to <abbr>GPII</abbr> (Module 4)</a></li>
-  </ul>
+  <ol id="toc">
+    <li><a href="#module-1">Introduction to Personalization (Module 1)</a>
+      <ol>
+        <li><a href="#about-this-course">About This Course</a></li>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#barriers-accessibility">Barriers, Accessibility and Usability</a></li>
+        <li><a href="#accessibility-usability">Accessibility and Usability</a></li>
+        <li><a href="#firefox-accessibility-features">Accessibility Features in Firefox</a></li>
+        <li><a href="#firefox-accessibility-addons">Accessibility Add-ons for Firefox</a></li>
+        <li><a href="#one-size-fits-all">Accessibility and “One Size Fits All”</a></li>
+        <li><a href="#adaptable-vs-adaptive">Adaptable Versus Adaptive User Interfaces</a></li>
+      </ol>
+    </li>
+    <li><a href="#module-2">Understanding Personalization on Web Pages and Sites (Module 2)</a>
+      <ol>
+        <li><a href="#json-np-sets"><abbr>JSON</abbr>-based Needs &amp; Preferences Sets</a></li>
+        <li><a href="#common-terms">Common Terms</a></li>
+        <li><a href="#app-specific-terms">Application-Specific Terms</a></li>
+        <li><a href="#np-set-other-parts">The Other Parts of the <abbr>NP</abbr> Set</a></li>
+        <li><a href="#alternative-style-sheets">Alternative Style Sheets</a></li>
+        <li><a href="#fonts-text">Fonts and Other Text Characteristics</a></li>
+        <li><a href="#navigation-features">Navigation</a></li>
+        <li><a href="#captions-audio-description">Videos: Captions and Audio Description</a></li>
+        <li><a href="#advanced-adaptations">Advanced Adaptations</a></li>
+      </ol>
+    </li>
+    <li><a href="#module-3">Hands On: Personalizing a Web Interface (Module 3)</a>
+      <ol>
+        <li><a href="#hands-on-intro">Introduction to the Hands-on Task</a></li>
+        <li><a href="#hands-on-description">Project: Making a Website Adaptive</a></li>
+        <li><a href="#hands-on-website">Example Website</a></li>
+        <li><a href="#hands-on-local-server">Running the Example Website on a Local Server</a></li>
+      </ol>
+    </li>
+    <li><a href="#module-4">Introduction to <abbr>GPII</abbr> (Module 4)</a>
+      <ol>
+        <li><a href="#personalization-gpii">Personalization and <abbr>GPII</abbr></a></li>
+        <li><a href="#what-is-gpii">What Is <abbr>GPII</abbr>?</a></li>
+        <li><a href="#gpii-apfp">The <abbr>GPII</abbr> Adaptation Framework</a></li>
+        <li><a href="#gpii-matchmaking">Matchmaking Between Preferences Sets and Solutions</a></li>
+        <li><a href="#gpii-integration">Integrating a Solution</a></li>
+        <li><a href="#course-summary">Course Summary</a></li>
+        <li><a href="#where-from-here">Where to Go from Here?</a></li>
+      </ol>
+    </li>
+  </ol>
 
   <section class="module" id="module-1">
     <h2>Introduction to Personalization (Module 1)</h2>
     <section>
       <!--<h3>Welcome to the Course</h3>-->
-      <h3>About This Course</h3>
+      <h3 id="about-this-course">About This Course</h3>
       <p>In this course, you will learn the fundamentals of user interface personalization in the context of web sites and web applications. You will learn how user interface personalization can be used to adapt web pages to a diversity of needs, especially the needs of people with disabilities. The course will explain the difference between adaptable and adaptive user interfaces, and why adaptable user interfaces have been only moderately successful.</p>
       <p>You will get an introduction to the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) framework and its infrastructure of automatically adapting a user interface to a user’s needs and preferences. (Optionally, you will also learn how to make an example web application adaptable by connecting it with the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) framework.)</p>
       <h4>What You'll Learn</h4>
@@ -122,7 +155,7 @@
       </p>
     </section>
     <section>
-      <h3>Welcome</h3>
+      <h3 id="welcome">Welcome</h3>
       <!--
       <div class="hdm-vimeo" data-plyr='{ "captions": { "defaultActive": true }}' data-type="vimeo" data-video-id="222236107"></div>
       -->
@@ -130,7 +163,7 @@
       <p>(You can watch <a href="https://vimeo.com/222236107">this video on Vimeo</a> and download it from there.)</p>      
     </section>
     <section>
-      <h3>Barriers, Accessibility and Usability</h3>
+      <h3 id="barriers-accessibility">Barriers, Accessibility and Usability</h3>
       <section>
         <h4>Barriers</h4>
         <p>We are all familiar with the experience of stumbling upon a web page that we can’t read because it is in a language that we aren’t familiar with. If it is a multilingual site, it usually offers links or buttons to switch to a different language, hopefully one we can read.</p>
@@ -192,7 +225,7 @@
       </ol>
     </section>
     <section>
-      <h3>Accessibility and Usability</h3>
+      <h3 id="accessibility-usability">Accessibility and Usability</h3>
       <p>In the context of this course, the goal of personalization is to make websites more usable and accessible for everybody. As Tim Berners-Lee, the inventor of the World Wide Web, said in 1997,</p>
       <blockquote>
         <p>The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.</p>
@@ -226,7 +259,7 @@
       </p>
     </section>
     <section>
-      <h3>Accessibility Features in Firefox</h3>
+      <h3 id="firefox-accessibility-features">Accessibility Features in Firefox</h3>
       <!--
       <div data-type="vimeo" data-video-id="235591486"></div>
       -->
@@ -250,7 +283,7 @@
       </ol>
     </section>
     <section>
-      <h3>Accessibility Add-ons for Firefox</h3>
+      <h3 id="firefox-accessibility-addons">Accessibility Add-ons for Firefox</h3>
       <!--
       <div data-type="vimeo" data-video-id="227325680"></div>
       -->
@@ -260,7 +293,7 @@
 
 
     <section>
-      <h3>Accessibility and “One Size Fits All”</h3>
+      <h3 id="one-size-fits-all">Accessibility and “One Size Fits All”</h3>
       <p>Since the mid 1990s, there have been efforts to formulate guidelines to increase the accessibility of webpages for people with disabilities.
         The year 1999 then saw the publication of the Web Content Accessibility Guidelines 1.0 (<abbr>WCAG</abbr> 1.0), 
         followed by a <a href="https://www.w3.org/TR/WCAG20/">second version in December 2008</a>.
@@ -308,7 +341,7 @@
       </section>
     </section>
     <section>
-      <h3>Adaptable Versus Adaptive User Interfaces</h3>
+      <h3 id="adaptable-vs-adaptive">Adaptable Versus Adaptive User Interfaces</h3>
       <p>In the videos about browser accessibility features and accessibility add-ons, we saw how <abbr>HTML</abbr> content can be adapted to make it more readable. 
         <abbr>HTML</abbr> is a text-based medium and is therefore very adaptable. By contrast, bitmap images are usually not <strong>adaptable</strong>;
         they can only be enlarged by enlarging their pixels, and colours cannot be adapted on the fly.
@@ -371,7 +404,7 @@
   <section class="module" id="module-2">
     <h2>Understanding Personalization on Web Pages and Sites (Module 2)</h2>
     <section>
-      <h3><abbr>JSON</abbr>-based Needs &amp; Preferences Sets</h3>
+      <h3 id="json-np-sets"><abbr>JSON</abbr>-based Needs &amp; Preferences Sets</h3>
       <p>Now that you are familiar with some of the aspects of adaptation and accessibility, it is time to explain how the adaptations that a specific person needs (or wants) can be described in a machine-readable way.
         A machine-readable description of adaptation needs or preferences is often called a “user profile”.
         In this course we will be using a specific “flavour” of user profile that does not contain any personally identifiable information but just a list of adaptations and settings that describe what a specific user needs or prefers;
@@ -413,7 +446,7 @@
         We therefore call these terms “common terms”. These are the subject of the next unit.
     </section>
     <section>
-      <h3>Common Terms</h3>
+      <h3 id="common-terms">Common Terms</h3>
       <p>Whenever possible, <strong>common terms</strong> use data types and value ranges that are intended to make the translation to specific application settings as easy as possible.
         For example, applications may identify language—such the language of a user interface or for speech synthesis—in various ways: some use numbers, some use non-standard strings that only the application supports.
         The common term <code>http://registry.gpii.eu/common/language</code> uses values based on 
@@ -433,7 +466,7 @@
       </p>
     </section>
     <section>
-      <h3>Application-Specific Terms</h3>
+      <h3 id="app-specific-terms">Application-Specific Terms</h3>
       <p>In our <a href="https://remexlabs.github.io/GTx_HDM12aX_preferences/olb_Carla.json">example <abbr>NP</abbr> set</a>, 
         the terms in the namespace <code>http://registry.gpii.net/applications/eu.gpii.olb</code> (in our example <abbr>NP</abbr> set) refer to settings in an application identified as <code>eu.gpii.olb</code>.
         These settings are not described using “common terms” but with “<strong>application-specific terms</strong>”. This type of terms uses names, data types and value ranges that directly reflect what an application uses internally.
@@ -451,7 +484,7 @@
       </p>
     </section>
     <section>
-      <h3>The Other Parts of the <abbr>NP</abbr> Set</h3>
+      <h3 id="np-set-other-parts">The Other Parts of the <abbr>NP</abbr> Set</h3>
       <p>Finally, let’s turn our attention to the code that wraps around the preferences in our 
         <a href="https://remexlabs.github.io/GTx_HDM12aX_preferences/olb_Carla.json">example <abbr>NP</abbr> set</a>.
       </p>
@@ -473,7 +506,7 @@
       </section>
     </section>
     <section>
-      <h3>Alternative Style Sheets</h3>
+      <h3 id="alternative-style-sheets">Alternative Style Sheets</h3>
       <p>A relatively straightforward way of providing adaptability is providing alternative style sheets.
         When web developers provide more than one style sheet, the goal is usually to cater for different devices and media.
         <abbr>CSS</abbr> 2 defined a list of media types for which you can write separate style sheets, for example, “<code>all</code>”, “<code>screen</code>”, “<code>print</code>”, “<code>projection</code>” and “<code>speech</code>”.
@@ -548,7 +581,7 @@
       </section> 
     </section>
     <section>
-      <h3>Fonts and Other Text Characteristics</h3>
+      <h3 id="fonts-text">Fonts and Other Text Characteristics</h3>
       <p>Text is an important part of the web, and people’s need and preferences regarding text readability vary a lot.
         For this reason, we will introduce a number of common terms that describe various characteristics of on-screen text.
         Each of these can be translated into <abbr>CSS</abbr> rules, but they are also relevant to office formats (especially in word processing and spreadsheets).
@@ -583,7 +616,7 @@
       </section>
     </section>
     <section>
-      <h3>Navigation</h3>
+      <h3 id="navigation-features">Navigation</h3>
       <p>Navigation is an important aspect of a website’s usability. While overall site navigation is very important, this unit is concerned with navigation within single pages. There are two common terms that can help improve intra-page navigation.</p>
       <p>The common term <code>displaySkiplinks</code> defines whether and on which conditions “<strong>skip links</strong>” or skip navigation links should be visible.
         A skip link is a link at the top of a web page that allows keyboard users to jump over or skip to the main content. Keyboard users rely a lot on the <kbd>TAB</kbd> key to move between elements such as links and form elements.
@@ -618,7 +651,7 @@
       </section>
     </section>
     <section>
-      <h3>Videos: Captions and Audio Description</h3>
+      <h3 id="captions-audio-description">Videos: Captions and Audio Description</h3>
       <p>Thanks to broadband internet, video has become very common on the web. However, video is not always accessible to all types of users.</p>
       <p><strong>Blind and visually impaired people</strong> cannot see (or cannot see well) what is happening on the screen.
         Visual information that is essential for understanding what is happening in the video can be described in audio.
@@ -666,7 +699,7 @@
       </section>
     </section>
     <section>
-      <h3>Advanced Adaptations</h3>
+      <h3 id="advanced-adaptations">Advanced Adaptations</h3>
       <p>The previous units introduced some of the ways in which web content can be adapted to the needs of various users.
         The video “<abbr>HdM</abbr> Adaptable Online Banking Solution 2016” (below) demonstrates some other types of adaptations.
         The video shows a simulation of an online banking interface with the following features:
@@ -693,7 +726,7 @@
   <section class="module" id="module-3">
     <h2>Hands On: Personalizing a Web Interface (Module 3)</h2>
     <section>
-      <h3>Introduction to the Hands-on Task</h3>
+      <h3 id="hands-on-intro">Introduction to the Hands-on Task</h3>
       <!--
       <div data-type="vimeo" data-video-id="222337728"></div>
       -->
@@ -701,7 +734,7 @@
       <p>(You can watch <a href="https://vimeo.com/222337728">this video on Vimeo</a> and download it from there.)</p>
     </section>
     <section>
-      <h3>Project: Making a Website Adaptive</h3>
+      <h3 id="hands-on-description">Project: Making a Website Adaptive</h3>
       <p>Your task in this module is to choose a website and to make it adapt to one or more preference sets.
         Briefly put, the goal of the task is to write JavaScript code that can fetch an <abbr>NP</abbr> set, read it and apply one or more of the preferences to the website.
         Below is a description of what you will need for this.
@@ -723,7 +756,7 @@
       </p>
     </section>
     <section>
-      <h3>Example Website</h3>
+      <h3 id="hands-on-website">Example Website</h3>
       <p>For the purpose of the exercise, you can either use an example website prepared by the course team, or a website that you created yourself.
         This section describes the example website prepared for the course.
       </p>
@@ -760,7 +793,7 @@
       </p>
     </section>
     <section>
-      <h3>Running the Example Website on a Local Server</h3>
+      <h3 id="hands-on-local-server">Running the Example Website on a Local Server</h3>
       <p>You can run the example website directly from the file system, since it does not rely on server-side scripts.
         However, for a more realistic experience, you may want to run it on a locally installed server.
         This is especially important for the XmlHttpRequests that fetch the <abbr>NP</abbr> sets.
@@ -821,7 +854,7 @@
   <section class="module" id="module-4">
     <h2>Introduction to <abbr>GPII</abbr> (Module 4)</h2>
     <section>
-      <h3>Personalization and <abbr>GPII</abbr></h3>
+      <h3 id="personalization-gpii">Personalization and <abbr>GPII</abbr></h3>
       <!--
       <div data-type="vimeo" data-video-id="222331682"></div>
       -->
@@ -829,7 +862,7 @@
       <p>(You can watch <a href="https://vimeo.com/222331682">this video on Vimeo</a> and download it from there.)</p>
     </section>
     <section>
-      <h3>What Is <abbr>GPII</abbr>?</h3>
+      <h3 id="what-is-gpii">What Is <abbr>GPII</abbr>?</h3>
       <p>The first half of this course introduced the concepts of adaptive software and personalization, and showed how some components of <abbr>GPII</abbr> can be used to make websites adapt to user profiles or <abbr>NP</abbr> sets.
         In the fourth and last module of the course, we will focus on the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) as a whole.
       </p>
@@ -879,7 +912,7 @@
       </section>
     </section>
     <section>
-      <h3>The <abbr>GPII</abbr> Adaptation Framework</h3>
+      <h3 id="gpii-apfp">The <abbr>GPII</abbr> Adaptation Framework</h3>
       <p>The <abbr>GPII</abbr> adaptation framework has been developed to work across platforms and devices, and has been tested on Microsoft Windows, <abbr>GNU</abbr>/Linux with the GNOME desktop (in the Fedora distribution), Android and Java <abbr title="Micro Edition">ME</abbr>.
         It currently requires installation by the user, which is a barrier to widespread adoption.
         Eventually, it is meant to get integrated into various operating systems, similar to the accessibility features for Microsoft Windows that were originally a separate download.
@@ -933,7 +966,7 @@
       </section>
     </section>
     <section>
-      <h3>Matchmaking Between Preferences Sets and Solutions</h3>
+      <h3 id="gpii-matchmaking">Matchmaking Between Preferences Sets and Solutions</h3>
       <p>The previous unit briefly mentioned the Transformer and the Matchmaker.
         These two components are responsible for matching the content of the NP set with the solutions detected by the Device Reporter.
       </p>
@@ -1036,7 +1069,7 @@
       </section>
     </section>
     <section>
-      <h3>Integrating a Solution</h3>
+      <h3 id="gpii-integration">Integrating a Solution</h3>
       <p>In the previous modules, we learnt how to build basic adaptation functionality into a website. This process did not use any of the components in the <abbr>GPII</abbr> adaptation framework.
         For example, instead of the <abbr>GPII</abbr>’s Preferences Server, we used a simple static website with publicly accessible example <abbr>NP</abbr> sets.
         We did not “register” the example website as a <abbr>GPII</abbr>-supported application. For these reasons, we also had to work without the Flow Manager, since it would not know what to do with requests from an unidentified application.
@@ -1110,7 +1143,7 @@
       </section>
     </section>
     <section>
-      <h3>Course Summary</h3>
+      <h3 id="course-summary">Course Summary</h3>
       <p>Let’s review the content we have covered in this course.</p>
       <h4>Introduction to Personalization</h4>
       <p>In this module, you learnt what types of barriers people with disabilities can encounter on the web, what some websites do about this, and what the difference is between accessibility and usability.
@@ -1129,7 +1162,7 @@
       <p>In the last module, you learnt how the Global Public Inclusive Infrastructure (<abbr>GPII</abbr>) enables personalization, what the main components in its adaptation framework are and what the process is for enabling <abbr>GPII</abbr> support for a desktop application.</p>
     </section>
     <section>
-      <h3>Where to Go from Here?</h3>
+      <h3 id="where-from-here">Where to Go from Here?</h3>
       <p>While <abbr>GPII</abbr> focuses on improving accessibility for people with disabilities and the elderly, this course did not assume any previous knowledge about accessibility.
         If you would like to learn more about accessibility, there are many options:
       </p>
